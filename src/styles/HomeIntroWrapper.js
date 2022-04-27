@@ -1,9 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const HomeIntroWrapper = styled.section`
-  margin: 5vh 0;
-  padding: 0 3vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+export const HomeIntroWrapper = styled(motion.section)`
+  padding: 3vmax;
+  height: 80vh;
 `;

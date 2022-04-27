@@ -21,18 +21,13 @@ const wiggle = keyframes`
 export const HomeTextBlock = styled(motion.h1)`
   font-size: 12vmin;
   text-transform: uppercase;
-  display: grid;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: max-content;
-
-  &:nth-child(2) {
-    margin-bottom: 1ch;
-    align-self: flex-end;
+  flex: 1;
+  .word-wrapper {
+    display: inline-block;
   }
 
-  &:nth-child(4) {
-    align-self: flex-end;
+  .letter {
+    cursor: default;
+    display: inline-block;
   }
 `;
