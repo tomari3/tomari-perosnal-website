@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { HomeIntroWrapper } from "../../styles/HomeIntroWrapper";
 import AnimatedCharacters from "../../styles/AnimatedText";
@@ -25,9 +25,14 @@ const container = {
 export const HomeIntro = () => {
   return (
     <HomeIntroWrapper initial="hidden" animate={"visible"} variants={container}>
-      {placeholderText.map((item, index) => {
-        return <AnimatedCharacters {...item} key={index} />;
-      })}
+      <div className="text">
+        {placeholderText.map((item, index) => {
+          return <AnimatedCharacters {...item} key={index} />;
+        })}
+      </div>
+      <div className="piece">
+        <h1>HEY</h1>
+      </div>
     </HomeIntroWrapper>
   );
 };
