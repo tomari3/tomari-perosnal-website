@@ -6,11 +6,11 @@ import AnimatedCharacters from "./AnimatedText";
 const placeholderText = [
   { text: "self taught" },
   {
-    text: "developer",
+    text: "developer.",
   },
   { text: "life long" },
   {
-    text: "designer",
+    text: "designer.",
   },
 ];
 
