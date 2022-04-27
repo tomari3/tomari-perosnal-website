@@ -1,7 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 import { HomeIntroWrapper } from "../../styles/HomeIntroWrapper";
-import AnimatedCharacters from "../../styles/AnimatedText";
+import AnimatedCharacters from "./AnimatedText";
+import AnimatedSphere from "../../threejs/Orb";
 
 const placeholderText = [
   { text: "self taught" },
@@ -17,7 +21,7 @@ const placeholderText = [
 const container = {
   visible: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.05,
     },
   },
 };
@@ -31,7 +35,14 @@ export const HomeIntro = () => {
         })}
       </div>
       <div className="piece">
-        <h1>HEY</h1>
+        <Canvas clasName="canvas">
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[-2, 5, 2]} />
+          <Suspense fallback={null}>
+            <OrbitControls enableZoom={false} />
+            <AnimatedSphere />
+          </Suspense>
+        </Canvas>
       </div>
     </HomeIntroWrapper>
   );

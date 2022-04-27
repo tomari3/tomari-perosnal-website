@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { HomeTextBlock } from "./HomeTextBlock";
+import { HomeTextBlock } from "../../styles/HomeTextBlock";
 
 const Wrapper = (props) => {
   return <span className="word-wrapper">{props.children}</span>;
@@ -21,14 +21,19 @@ const AnimatedCharacters = (props) => {
     },
   };
 
-  const hover = {
+  const letterHover = {
     scale: 2,
     zIndex: 10,
     position: "static",
     transition: {
       type: "spring",
       bounce: 0.6,
+      duration: 0.5,
     },
+  };
+
+  const wordHover = {
+    // backgroundColor: "black",
   };
 
   const splitWords = props.text.split(" ");
@@ -44,7 +49,7 @@ const AnimatedCharacters = (props) => {
   });
 
   return (
-    <HomeTextBlock>
+    <HomeTextBlock whileHover={wordHover}>
       {words.map((word, index) => {
         return (
           <Wrapper key={index}>
@@ -53,7 +58,7 @@ const AnimatedCharacters = (props) => {
                 <motion.span
                   className="letter-wrapper"
                   initial={{ overflow: "hidden", display: "inline-block" }}
-                  whileHover={hover}
+                  whileHover={letterHover}
                   key={index}
                 >
                   <motion.span className="letter" variants={item}>
