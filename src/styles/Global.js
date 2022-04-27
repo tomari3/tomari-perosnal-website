@@ -15,6 +15,8 @@ export const Global = createGlobalStyle`
       font-family: 'Montserrat', sans-serif;
 
       --primary-bg: white;
+      --primary-text: black;
+      --primary-accent: #EAD7D1;
 
       font-size: ${px2vw(32)};
 
