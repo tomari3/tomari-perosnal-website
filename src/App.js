@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Global />
-      <Wrapper primary color>
+      <Wrapper primary colored>
         <Header />
         <Home />
         <Footer />

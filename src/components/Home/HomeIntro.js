@@ -1,11 +1,7 @@
 import React, { Suspense } from "react";
 
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-
 import { HomeIntroWrapper } from "../../styles/HomeIntroWrapper";
 import AnimatedCharacters from "./AnimatedText";
-import AnimatedSphere from "../../threejs/Orb";
 
 const placeholderText = [
   { text: "self taught" },
@@ -35,14 +31,9 @@ export const HomeIntro = () => {
         })}
       </div>
       <div className="piece">
-        <Canvas clasName="canvas">
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[-2, 5, 2]} />
-          <Suspense fallback={null}>
-            <OrbitControls enableZoom={false} />
-            <AnimatedSphere />
-          </Suspense>
-        </Canvas>
+        <Suspense fallback={null}>
+          <h1>ThreeJS PLACEHOLDER</h1>
+        </Suspense>
       </div>
     </HomeIntroWrapper>
   );

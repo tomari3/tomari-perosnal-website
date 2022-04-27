@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 const clouds = keyframes`
    0% {
@@ -14,13 +15,10 @@ const clouds = keyframes`
 `;
 
 const Gradient =
-  "linear-gradient(-45deg,#c7f0f4,#f794af,#ee95b5,#99d2d7,#a4fae5,#e6859f)";
+  "linear-gradient(-45deg,var(--gradient-blue1),var(--gradient-pink1),var(--gradient-pink2),var(--gradient-blue2),var(--gradient-blue3),var(--gradient-pink3))";
 
-export const Wrapper = styled.div`
-  /* height: ${(props) => (props.primary ? "100vh" : "auto")};
-  width: ${(props) => (props.primary ? "100vw" : "auto")}; */
-
-  background: ${(props) => (props.color ? Gradient : "var(--primary-bg)")};
+export const Wrapper = styled(motion.div)`
+  background: ${(props) => (props.colored ? Gradient : "var(--primary-bg)")};
   background-size: 400% 400%;
   animation: ${clouds} 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
 `;

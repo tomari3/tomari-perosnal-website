@@ -18,6 +18,13 @@ export const Global = createGlobalStyle`
       --primary-text: black;
       --primary-accent: #EAD7D1;
 
+      --gradient-blue1: #a4fae5;
+      --gradient-blue2: #99d2d7;
+      --gradient-blue3: #c7f0f4;
+      --gradient-pink1: #f794af;
+      --gradient-pink2: #ee95b5;
+      --gradient-pink3: #e6859f;
+
       font-size: ${px2vw(32)};
 
       @media (min-width: 768px) {

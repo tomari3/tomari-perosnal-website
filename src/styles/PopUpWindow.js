@@ -5,7 +5,7 @@ import px2vw from "../utils/px2vw";
 export const PopUpWindow = styled(motion.article)`
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--primary-bg);
   position: absolute;
   top: calc(1rem / 2);
   right: calc(${px2vw(108)} - 1rem / 2);

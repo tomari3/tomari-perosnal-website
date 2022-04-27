@@ -32,10 +32,6 @@ const AnimatedCharacters = (props) => {
     },
   };
 
-  const wordHover = {
-    // backgroundColor: "black",
-  };
-
   const splitWords = props.text.split(" ");
 
   const words = [];
@@ -49,7 +45,7 @@ const AnimatedCharacters = (props) => {
   });
 
   return (
-    <HomeTextBlock whileHover={wordHover}>
+    <HomeTextBlock>
       {words.map((word, index) => {
         return (
           <Wrapper key={index}>

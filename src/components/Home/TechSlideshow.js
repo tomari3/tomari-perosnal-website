@@ -6,7 +6,7 @@ import { TechSlideShowWrapper } from "../../styles/TechSlideShowWrapper";
 
 export const TechSlideshow = ({ children }) => {
   const iconsList = React.Children.map(children, (child) =>
-    React.cloneElement(<div whileHover={{ height: "100%" }}>{child}</div>)
+    React.cloneElement(<div>{child}</div>)
   );
 
   return (
