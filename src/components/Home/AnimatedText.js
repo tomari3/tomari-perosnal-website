@@ -1,4 +1,7 @@
 import React from "react";
+
+import { getRandom } from "../../utils/getRandom";
+
 import { motion } from "framer-motion";
 import { HomeTextBlock } from "../../styles/HomeTextBlock";
 
@@ -22,7 +25,8 @@ const AnimatedCharacters = (props) => {
   };
 
   const letterHover = {
-    scale: 2,
+    scale: 1.5,
+    rotate: `${getRandom(-20, 20)}deg`,
     zIndex: 10,
     position: "static",
     transition: {

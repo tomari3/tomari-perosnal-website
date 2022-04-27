@@ -24,6 +24,13 @@ export const Global = createGlobalStyle`
       --gradient-pink1: #f794af;
       --gradient-pink2: #ee95b5;
       --gradient-pink3: #e6859f;
+      
+      /* --gradient-blue1: #1b2925;
+      --gradient-blue2: #152224;
+      --gradient-blue3: #192426;
+      --gradient-pink1: #32181f;
+      --gradient-pink2: #3c252d;
+      --gradient-pink3: #36131c; */
 
       font-size: ${px2vw(32)};
 

@@ -1,22 +1,21 @@
-import React from "react";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react"; // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Global from "./styles/Global";
 
 import { Home } from "./components/Home/Home";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
-import { Wrapper } from "./styles/Wrapper";
+import { ColoredWrapper } from "./components/Home/ColoredWrapper";
 
 function App() {
   return (
     <>
       <Global />
-      <Wrapper primary colored>
+      <ColoredWrapper>
         <Header />
         <Home />
         <Footer />
-      </Wrapper>
+      </ColoredWrapper>
     </>
   );
 }
