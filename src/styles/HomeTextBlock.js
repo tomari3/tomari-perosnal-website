@@ -1,4 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
+
 // import px2vw from "../utils/px2vw";
 
 const wiggle = keyframes`
@@ -16,7 +18,7 @@ const wiggle = keyframes`
     }
 `;
 
-export const HomeTextBlock = styled.h1`
+export const HomeTextBlock = styled(motion.h1)`
   font-size: 12vmin;
   text-transform: uppercase;
   display: grid;
@@ -24,7 +26,6 @@ export const HomeTextBlock = styled.h1`
   align-items: center;
   position: relative;
   width: max-content;
-  /* line-height: 1.5ch; */
 
   &:nth-child(2) {
     margin-bottom: 1ch;
@@ -33,15 +34,5 @@ export const HomeTextBlock = styled.h1`
 
   &:nth-child(4) {
     align-self: flex-end;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: ${(props) => (props.active ? "100%" : "0px")};
-    border-bottom: 10px solid var(--primary-bg);
-    border-radius: 10px;
-    transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
   }
 `;

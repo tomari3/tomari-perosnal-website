@@ -7,12 +7,15 @@ import { PopUpWindow } from "../../styles/PopUpWindow";
 
 const container = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at top right  )`,
+    clipPath: `circle(${height * 2 + 400}px at top right   )`,
     padding: " 5rem 0 1rem 1rem",
   }),
   closed: {
     clipPath: "circle(30px at top right )",
     padding: "0rem 0 0rem 1rem",
+    transition: {
+      duration: 0.2,
+    },
   },
 };
 
@@ -22,10 +25,18 @@ const child = {
     opacity: 1,
     transition: {
       delay: 0.2,
+      opacity: {
+        duration: 0.5,
+      },
     },
   },
   closed: {
     opacity: 0,
+    transition: {
+      opacity: {
+        duration: 0.1,
+      },
+    },
   },
 };
 
