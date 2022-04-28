@@ -37,7 +37,7 @@ import { Blender } from "@styled-icons/boxicons-logos/Blender";
 
 export const SkillsSection = () => {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <Title sub>front end</Title>
       <TechSlideshow>
         <ReactLogo />
@@ -78,6 +78,6 @@ export const SkillsSection = () => {
         <Cinema4d />
         <Blender />
       </TechSlideshow>
-    </>
+    </div>
   );
 };

@@ -1,18 +1,20 @@
 import React from "react";
-
 import { motion } from "framer-motion";
 
 import { TechSlideShowWrapper } from "../../styles/TechSlideShowWrapper";
 
 export const TechSlideshow = ({ children }) => {
-  const iconsList = React.Children.map(children, (child) =>
-    React.cloneElement(<div>{child}</div>)
-  );
-
   return (
-    <TechSlideShowWrapper>
-      <div className="slide slide-1">{iconsList}</div>
-      <div className="slide slide-2">{iconsList}</div>
+    <TechSlideShowWrapper className="tech-slideshow">
+      {React.Children.map(children, (child, index) => {
+        return (
+          <>
+            <motion.span className="icon-wrapper" key={index}>
+              <motion.span className="icon">{child}</motion.span>
+            </motion.span>
+          </>
+        );
+      })}
     </TechSlideShowWrapper>
   );
 };

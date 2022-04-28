@@ -8,9 +8,11 @@ export const Home = () => {
   return (
     <main>
       <HomeIntro />
+
       <SubWrapper>
         <SkillsSection />
       </SubWrapper>
+
       <SubWrapper>
         <HomeProjects />
       </SubWrapper>
