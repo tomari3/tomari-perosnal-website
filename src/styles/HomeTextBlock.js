@@ -13,7 +13,8 @@ export const HomeTextBlock = styled(motion.h1)`
 
   .letter {
     transition: var(--default-transition);
-    color: var(--primary-bg);
+    color: var(--primary-text);
+    font-weight: 600;
     cursor: default;
     display: inline-block;
   }

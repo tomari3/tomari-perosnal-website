@@ -9,4 +9,5 @@ export const TextLink = styled(motion.a)`
   font-weight: bold;
   font-size: ${px2vw(12 * 2)};
   cursor: pointer;
+  transition: var(--default-transition);
 `;

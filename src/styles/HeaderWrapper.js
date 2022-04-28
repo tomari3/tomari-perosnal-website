@@ -9,4 +9,5 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   position: relative;
   max-height: 50px;
+  transition: var(--default-transition);
 `;

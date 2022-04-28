@@ -13,6 +13,13 @@ export const lightTheme = {
 
 export const darkTheme = {
   primaryBG: "#121212",
-  primaryText: "#F3F3F6",
+  primaryText: "#DCDCE5",
   primaryAccent: "#EAD7D1",
+
+  gradientBlue1: "#02271E",
+  gradientBlue2: "#0B1C1D",
+  gradientBlue3: "#072022",
+  gradientPink1: "#26030C",
+  gradientPink2: "#230611",
+  gradientPink3: "#22070E",
 };

@@ -10,6 +10,8 @@ export const TechSlideShowWrapper = styled(motion.section)`
   padding: 5vh 10vw;
 
   .target {
+    color: var(--primary-text);
+    background-color: var(--primary-text);
     font-size: 0px;
     aspect-ratio: 1;
     width: 1rem;
@@ -20,6 +22,8 @@ export const TechSlideShowWrapper = styled(motion.section)`
     z-index: 1;
 
     &::before {
+      background-color: var(--primary-text);
+
       content: "";
       position: absolute;
       z-index: -1;

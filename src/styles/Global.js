@@ -14,7 +14,7 @@ export const Global = createGlobalStyle`
   :root {
 
     
-      --default-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      --default-transition: color 0.3s ease;
 
       font-family: 'Montserrat', sans-serif;
 

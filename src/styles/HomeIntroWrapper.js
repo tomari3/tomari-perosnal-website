@@ -7,6 +7,7 @@ export const HomeIntroWrapper = styled(motion.section)`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  transition: var(--default-transition);
 
   .piece {
     display: flex;
