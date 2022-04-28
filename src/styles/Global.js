@@ -14,21 +14,24 @@ export const Global = createGlobalStyle`
   :root {
 
     
-      --default-transition: color 0.3s ease;
-
-      font-family: 'Montserrat', sans-serif;
-
-      --primary-bg: ${({ theme }) => theme.primaryBG};
-      --primary-text: ${({ theme }) => theme.primaryText};
-      --primary-accent: ${({ theme }) => theme.primaryAccent};
-
-      --gradient-blue1: ${({ theme }) => theme.gradientBlue1};;
-      --gradient-blue2: ${({ theme }) => theme.gradientBlue2};;
-      --gradient-blue3: ${({ theme }) => theme.gradientBlue3};;
-      --gradient-pink1: ${({ theme }) => theme.gradientPink1};;
-      --gradient-pink2: ${({ theme }) => theme.gradientPink2};;
-      --gradient-pink3: ${({ theme }) => theme.gradientPink3};;
-      
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    --primary-bg: ${({ theme }) => theme.primaryBG};
+    --primary-text: ${({ theme }) => theme.primaryText};
+    --primary-accent: ${({ theme }) => theme.primaryAccent};
+    
+    --gradient-blue1: ${({ theme }) => theme.gradientBlue1};;
+    --gradient-blue2: ${({ theme }) => theme.gradientBlue2};;
+    --gradient-blue3: ${({ theme }) => theme.gradientBlue3};;
+    --gradient-pink1: ${({ theme }) => theme.gradientPink1};;
+    --gradient-pink2: ${({ theme }) => theme.gradientPink2};;
+    --gradient-pink3: ${({ theme }) => theme.gradientPink3};;
+    
+    --bg-opacity: ${({ theme }) => theme.bgOpacity}
+    
+    --default-transition: color 2s ease;
+    
       font-size: ${px2vw(32)};
 
       @media (min-width: 768px) {

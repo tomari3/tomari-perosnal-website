@@ -4,7 +4,7 @@ import { Wrapper } from "../../styles/Wrapper";
 const clouds = {
   repeat: Infinity,
   type: "spring",
-  duration: 100,
+  duration: 50,
   stiffness: 10,
   times: [0, 0.2, 0.4, 0.6, 0.8, 1],
 };
