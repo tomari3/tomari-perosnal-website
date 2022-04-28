@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useDimensions } from "../../utils/use-dimentions";
+import { useDimensions } from "../../utils/useDimensions";
 
 import { TextLink } from "../../styles/TextLink";
 import { PopUpButton } from "../../styles/PopUpButton";

@@ -1,8 +1,6 @@
 import React from "react";
 import { Title } from "../../styles/Title";
 
-import { motion } from "framer-motion";
-
 import { FrontEndSkills } from "./FrontEndSkills";
 import { BackEndSkills } from "./BackEndSkills";
 import { MiscSkills } from "./MiscSkills";
@@ -14,24 +12,67 @@ const titles = {
   misc: "and much, much more",
 };
 
+const titlesTransition = {
+  ease: "easeInOut",
+  duration: 0.8,
+};
+
 export const SkillsSection = () => {
   return (
     <div style={{ overflow: "hidden" }}>
-      <div>
-        <Title style={{ padding: "5rem 0" }}>{titles.main}</Title>
+      <div
+        style={{
+          height: "150vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Title
+          transition={titlesTransition}
+          initial={{ scale: 7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false }}
+        >
+          {titles.main}
+        </Title>
       </div>
       <div>
-        <Title sub>{titles.front}</Title>
+        <Title
+          sub
+          transition={titlesTransition}
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+        >
+          {titles.front}
+        </Title>
         <FrontEndSkills />
       </div>
 
       <div>
-        <Title sub>{titles.back}</Title>
+        <Title
+          sub
+          transition={titlesTransition}
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+        >
+          {titles.back}
+        </Title>
         <BackEndSkills />
       </div>
 
       <div>
-        <Title sub>{titles.misc}</Title>
+        <Title
+          sub
+          transition={titlesTransition}
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+        >
+          {titles.misc}
+        </Title>
         <MiscSkills />
       </div>
     </div>
