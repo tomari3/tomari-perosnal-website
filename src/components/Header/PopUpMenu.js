@@ -40,7 +40,7 @@ const child = {
   },
 };
 
-export const PopUpMenu = ({ open, setOpen }) => {
+export const PopUpMenu = ({ open, setOpen, toggle }) => {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
@@ -87,6 +87,7 @@ export const PopUpMenu = ({ open, setOpen }) => {
         >
           resume
         </TextLink>
+        <themeButton onClick={toggle}>click</themeButton>
       </PopUpWindow>
     </>
   );

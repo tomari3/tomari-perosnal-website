@@ -14,24 +14,17 @@ export const Global = createGlobalStyle`
 
       font-family: 'Montserrat', sans-serif;
 
-      --primary-bg: white;
-      --primary-text: black;
-      --primary-accent: #EAD7D1;
+      --primary-bg: ${({ theme }) => theme.primaryBG};
+      --primary-text: ${({ theme }) => theme.primaryText};
+      --primary-accent: ${({ theme }) => theme.primaryAccent};
 
-      --gradient-blue1: #a4fae5;
-      --gradient-blue2: #99d2d7;
-      --gradient-blue3: #c7f0f4;
-      --gradient-pink1: #f794af;
-      --gradient-pink2: #ee95b5;
-      --gradient-pink3: #e6859f;
+      --gradient-blue1: ${({ theme }) => theme.gradientBlue1};;
+      --gradient-blue2: ${({ theme }) => theme.gradientBlue2};;
+      --gradient-blue3: ${({ theme }) => theme.gradientBlue3};;
+      --gradient-pink1: ${({ theme }) => theme.gradientPink1};;
+      --gradient-pink2: ${({ theme }) => theme.gradientPink2};;
+      --gradient-pink3: ${({ theme }) => theme.gradientPink3};;
       
-      /* --gradient-blue1: #1b2925;
-      --gradient-blue2: #152224;
-      --gradient-blue3: #192426;
-      --gradient-pink1: #32181f;
-      --gradient-pink2: #3c252d;
-      --gradient-pink3: #36131c; */
-
       font-size: ${px2vw(32)};
 
       @media (min-width: 768px) {

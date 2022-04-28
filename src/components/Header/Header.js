@@ -7,7 +7,7 @@ import { MainLogo } from "../../styles/MainLogo";
 import { NavBar } from "./NavBar";
 import { PopUpMenu } from "./PopUpMenu";
 
-export const Header = () => {
+export const Header = ({ toggle }) => {
   const [open, setOpen] = useState(false);
 
   const { width } = useWindowDimensions();
@@ -15,8 +15,11 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <MainLogo>tom ari</MainLogo>
-
-      {width < 590 ? <PopUpMenu open={open} setOpen={setOpen} /> : <NavBar />}
+      {width < 590 ? (
+        <PopUpMenu toggle={toggle} open={open} setOpen={setOpen} />
+      ) : (
+        <NavBar toggle={toggle} />
+      )}
     </HeaderWrapper>
   );
 };

@@ -10,6 +10,7 @@ export const TechSlideshow = ({ children }) => {
 
   const target = {
     on: {
+      fontSize: "inherit",
       width: "1rem",
       outline: "1rem solid red",
       position: "relative",

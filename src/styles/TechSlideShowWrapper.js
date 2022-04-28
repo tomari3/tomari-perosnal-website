@@ -8,9 +8,9 @@ export const TechSlideShowWrapper = styled(motion.section)`
   align-items: center;
   justify-content: space-between;
   padding: 5vh 10vw;
-  background-color: aliceblue;
 
   .target {
+    font-size: 0px;
     aspect-ratio: 1;
     width: 1rem;
     border-radius: 100%;

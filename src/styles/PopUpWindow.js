@@ -12,5 +12,4 @@ export const PopUpWindow = styled(motion.article)`
   z-index: 9;
   gap: 1rem;
   border-radius: 10px;
-  /* border: 1px solid black; */
 `;
