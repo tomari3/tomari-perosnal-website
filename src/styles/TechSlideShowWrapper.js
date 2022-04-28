@@ -4,18 +4,23 @@ import { motion } from "framer-motion";
 export const TechSlideShowWrapper = styled(motion.section)`
   height: 130vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  gap: 10vw;
+
+  .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+  }
+
   .icon-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
     .icon {
-      height: 1rem;
       aspect-ratio: 1;
-      /* background-color: black; */
     }
 
     svg {

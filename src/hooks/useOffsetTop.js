@@ -5,12 +5,12 @@ export const useOffsetTop = (ref) => {
 
   useEffect(() => {
     const updatePosition = () => {
-      setScrollPosition(window.pageYOffset - ref.current.offsetTop);
+      setScrollPosition(window.pageYOffset);
     };
     window.addEventListener("scroll", updatePosition);
     updatePosition();
     return () => window.removeEventListener("scroll", updatePosition);
-  }, []);
+  }, [ref]);
 
   return scrollPosition;
 };
