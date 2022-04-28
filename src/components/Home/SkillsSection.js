@@ -7,9 +7,9 @@ import { MiscSkills } from "./MiscSkills";
 
 const titles = {
   main: "i know things",
-  front: "in the front",
-  back: "in the back",
-  misc: "and much, much more",
+  front: "front end",
+  back: "back end",
+  misc: "and all around",
 };
 
 const titlesTransition = {
@@ -40,6 +40,7 @@ export const SkillsSection = () => {
       <div>
         <Title
           sub
+          style={{ padding: "15vh" }}
           transition={titlesTransition}
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -53,6 +54,7 @@ export const SkillsSection = () => {
       <div>
         <Title
           sub
+          style={{ padding: "15vh" }}
           transition={titlesTransition}
           initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -67,6 +69,7 @@ export const SkillsSection = () => {
         <Title
           sub
           transition={titlesTransition}
+          style={{ padding: "15vh" }}
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}

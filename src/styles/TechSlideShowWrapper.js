@@ -2,25 +2,57 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const TechSlideShowWrapper = styled(motion.section)`
-  height: 130vh;
+  height: 90vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+  background-color: aliceblue;
 
-  .icons-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-    height: 80vh;
+  .target {
+    aspect-ratio: 1;
+    width: 1rem;
+    border-radius: 100%;
+    background-color: white;
+    outline: 1rem solid red;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: calc(-250%);
+      top: calc(-250%);
+      border-radius: 100%;
+      width: 4rem;
+      aspect-ratio: 1;
+      border: 1rem solid blue;
+    }
+    &::after {
+      position: absolute;
+      content: "GAME!";
+      top: -4rem;
+      left: -1rem;
+    }
   }
 
+  .icons-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .icon-wrapper {
+    padding: 1rem;
     display: flex;
+    align-items: center;
     justify-content: center;
+
     .icon {
       aspect-ratio: 1;
+      z-index: 1;
     }
 
     svg {
