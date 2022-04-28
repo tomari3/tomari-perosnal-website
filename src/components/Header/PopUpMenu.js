@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useDimensions } from "../../hooks/useDimensions";
 
 import { TextLink } from "../../styles/TextLink";
-import { ThemeButton } from "../../styles/ThemeButton";
+import { ThemeButton } from "./ThemeButton";
 import { PopUpButton } from "../../styles/PopUpButton";
 import { PopUpWindow } from "../../styles/PopUpWindow";
 
@@ -88,7 +88,7 @@ export const PopUpMenu = ({ open, setOpen, toggle }) => {
         >
           resume
         </TextLink>
-        <ThemeButton onClick={toggle}></ThemeButton>
+        <ThemeButton toggle={toggle}></ThemeButton>
       </PopUpWindow>
     </>
   );

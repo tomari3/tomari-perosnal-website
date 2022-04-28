@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { TextLink } from "../../styles/TextLink";
-import { ThemeButton } from "../../styles/ThemeButton";
+import { ThemeButton } from "./ThemeButton";
 
 const style = {
   display: "flex",
@@ -15,7 +15,7 @@ const style = {
 export const NavBar = ({ toggle }) => {
   return (
     <motion.nav style={style}>
-      <ThemeButton onClick={toggle}></ThemeButton>
+      <ThemeButton toggle={toggle}></ThemeButton>
       <TextLink whileHover={{ y: 2 }}>about</TextLink>
       <TextLink whileHover={{ y: 2 }}>projects</TextLink>
       <TextLink whileHover={{ y: 2 }}>contact</TextLink>
