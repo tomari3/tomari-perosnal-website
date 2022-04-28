@@ -13,11 +13,9 @@ const AnimatedCharacters = (props) => {
   const item = {
     hidden: {
       y: "100%",
-      color: "var(--primary-text)",
     },
     visible: {
       y: 0,
-      color: "var(--primary-bg)",
       transition: {
         type: "spring",
       },

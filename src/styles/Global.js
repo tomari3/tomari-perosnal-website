@@ -5,12 +5,16 @@ export const Global = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,200&display=swap');
 
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   :root {
+
+    
+      --default-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
       font-family: 'Montserrat', sans-serif;
 

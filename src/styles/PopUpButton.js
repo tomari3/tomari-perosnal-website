@@ -18,8 +18,8 @@ export const PopUpButton = styled.button`
   span {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => (open ? "black" : "black")};
     border-radius: 10px;
+    background-color: var(--primary-text);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     position: relative;
     transform-origin: 1px;

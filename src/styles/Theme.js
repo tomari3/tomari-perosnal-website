@@ -12,7 +12,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  primaryBG: "white",
-  primaryText: "black",
+  primaryBG: "#121212",
+  primaryText: "#F3F3F6",
   primaryAccent: "#EAD7D1",
 };

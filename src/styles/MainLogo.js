@@ -6,4 +6,5 @@ export const MainLogo = styled.h1`
   font-size: ${px2vw(24)};
   font-weight: bold;
   text-transform: uppercase;
+  color: var(--primary-text);
 `;

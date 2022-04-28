@@ -12,6 +12,8 @@ export const HomeTextBlock = styled(motion.h1)`
   }
 
   .letter {
+    transition: var(--default-transition);
+    color: var(--primary-bg);
     cursor: default;
     display: inline-block;
   }
