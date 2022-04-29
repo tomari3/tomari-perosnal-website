@@ -36,12 +36,21 @@ export const TechSlideShowWrapper = styled(motion.section)`
       aspect-ratio: 1;
       border: 1rem solid blue;
     }
-    &::after {
+
+    span:first-child {
+      color: var(--primary-text);
+      text-transform: uppercase;
       position: absolute;
-      width: 4rem;
-      content: "CURLING!";
-      top: -4rem;
+      bottom: 5rem;
       left: -2rem;
+    }
+    span:last-child {
+      color: var(--primary-text);
+      opacity: 0.6;
+      position: absolute;
+      top: -4rem;
+      width: 8rem;
+      left: -3rem;
     }
   }
 

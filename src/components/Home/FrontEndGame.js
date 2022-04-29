@@ -35,6 +35,24 @@ export const FrontEndGame = ({ children }) => {
         type: "spring",
         bounce: 1.5,
         mass: 0.5,
+        delay: 0.02,
+      },
+    },
+  };
+  const gameText = {
+    on: {
+      fontSize: "1rem",
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        delay: 0.3,
+      },
+    },
+    off: {
+      opacity: 0,
+      fontSize: "0rem",
+      transition: {
+        duration: 0.1,
       },
     },
   };
@@ -74,7 +92,14 @@ export const FrontEndGame = ({ children }) => {
         className="target"
         variants={gameTarget}
         animate={game ? "on" : "off"}
-      />
+      >
+        <motion.span variants={gameText} animate={game ? "on" : "off"}>
+          curling!
+        </motion.span>
+        <motion.span variants={gameText} animate={game ? "on" : "off"}>
+          drag and shoot
+        </motion.span>
+      </motion.div>
       <motion.div className="arrow-wrapper">
         <motion.span
           className="arrow"
