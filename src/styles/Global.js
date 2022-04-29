@@ -30,10 +30,9 @@ export const Global = createGlobalStyle`
     
     --default-transition: color 2s ease;
     
-    --bg-opacity: ${({ theme }) => theme.bgOpacity}
+    --bg-opacity: ${({ theme }) => theme.bgOpacity};;
     
     
-      font-size: ${px2vw(32)};
 
       @media (min-width: 768px) {
         font-size: ${px2vw(18)};
