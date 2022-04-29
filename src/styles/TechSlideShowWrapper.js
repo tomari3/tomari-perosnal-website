@@ -21,6 +21,7 @@ export const TechSlideShowWrapper = styled(motion.section)`
     outline: 1rem solid red;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 
     &::before {
       background-color: white;
@@ -37,9 +38,10 @@ export const TechSlideShowWrapper = styled(motion.section)`
     }
     &::after {
       position: absolute;
-      content: "GAME!";
+      width: 4rem;
+      content: "CURLING!";
       top: -4rem;
-      left: -1rem;
+      left: -2rem;
     }
   }
 

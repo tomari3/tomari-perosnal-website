@@ -12,11 +12,11 @@ import { Threedotjs } from "@styled-icons/simple-icons/Threedotjs";
 import { Javascript } from "@styled-icons/simple-icons/Javascript";
 import { Typescript } from "@styled-icons/simple-icons/Typescript";
 
-import { TechSlideshow } from "./TechSlideshow";
+import { FrontEndGame } from "./FrontEndGame";
 
 export const FrontEndSkills = () => {
   return (
-    <TechSlideshow>
+    <FrontEndGame>
       <ReactLogo />
       <Javascript />
       <Typescript />
@@ -28,6 +28,6 @@ export const FrontEndSkills = () => {
       <Nextdotjs />
       <Framer />
       <Threedotjs />
-    </TechSlideshow>
+    </FrontEndGame>
   );
 };

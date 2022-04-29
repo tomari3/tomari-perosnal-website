@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 import { TechSlideShowWrapper } from "../../styles/TechSlideShowWrapper";
 
-export const TechSlideshow = ({ children }) => {
+export const FrontEndGame = ({ children }) => {
   const constraintsRef = useRef();
   const targetRef = useRef();
   const [game, setGame] = useState(false);
 
-  const target = {
+  const gameTarget = {
     on: {
       fontSize: "inherit",
       color: "var(--primary-text)",
@@ -33,23 +33,8 @@ export const TechSlideshow = ({ children }) => {
       position: "static",
       transition: {
         type: "spring",
-        bounce: 0.5,
-      },
-    },
-  };
-  const gameLine = {
-    on: {
-      borderBottom: "5px solid red",
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        delay: 0.3,
-      },
-    },
-    off: {
-      borderBottom: "0px solid red",
-      transition: {
-        duration: 0.1,
+        bounce: 1.5,
+        mass: 0.5,
       },
     },
   };
@@ -59,7 +44,7 @@ export const TechSlideshow = ({ children }) => {
       transition: {
         type: "spring",
         bounce: 0.5,
-        delay: 0.8,
+        delay: 0.3,
       },
     },
     on: {
@@ -67,7 +52,7 @@ export const TechSlideshow = ({ children }) => {
       transition: {
         type: "spring",
         bounce: 0.5,
-        delay: 0.6,
+        delay: 0.3,
       },
     },
     off: {
@@ -80,14 +65,14 @@ export const TechSlideshow = ({ children }) => {
   };
 
   return (
-    <TechSlideShowWrapper>
+    <TechSlideShowWrapper ref={constraintsRef}>
       <motion.div
         ref={targetRef}
         onClick={() => {
           setGame(false);
         }}
         className="target"
-        variants={target}
+        variants={gameTarget}
         animate={game ? "on" : "off"}
       />
       <motion.div className="arrow-wrapper">
@@ -108,12 +93,7 @@ export const TechSlideshow = ({ children }) => {
         />
       </motion.div>
 
-      <motion.div
-        ref={constraintsRef}
-        className="icons-grid"
-        variants={gameLine}
-        animate={game ? "on" : "off"}
-      >
+      <motion.div className="icons-grid">
         {React.Children.map(children, (child, index) => {
           return (
             <>
