@@ -11,6 +11,7 @@ export const TechSlideshow = ({ children }) => {
   const target = {
     on: {
       fontSize: "inherit",
+      color: "var(--primary-text)",
       width: "1rem",
       outline: "1rem solid red",
       position: "relative",
@@ -18,10 +19,14 @@ export const TechSlideshow = ({ children }) => {
       margin: "5rem",
       transition: {
         type: "spring",
-        bounce: 0.5,
+        bounce: 0.8,
+        mass: 2,
+        stiffness: 200,
       },
     },
     off: {
+      fontSize: "0px",
+      color: "transparent",
       width: "0rem",
       outline: "0rem solid red",
       margin: "0rem",
@@ -48,6 +53,31 @@ export const TechSlideshow = ({ children }) => {
       },
     },
   };
+  const gameArrow = {
+    long: {
+      height: "6rem",
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        delay: 0.8,
+      },
+    },
+    on: {
+      height: "3rem",
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        delay: 0.6,
+      },
+    },
+    off: {
+      height: "0rem",
+      borderBottom: "0px solid red",
+      transition: {
+        duration: 0.1,
+      },
+    },
+  };
 
   return (
     <TechSlideShowWrapper>
@@ -60,6 +90,23 @@ export const TechSlideshow = ({ children }) => {
         variants={target}
         animate={game ? "on" : "off"}
       />
+      <motion.div className="arrow-wrapper">
+        <motion.span
+          className="arrow"
+          variants={gameArrow}
+          animate={game ? "long" : "off"}
+        />
+        <motion.span
+          className="arrow-left"
+          variants={gameArrow}
+          animate={game ? "on" : "off"}
+        />
+        <motion.span
+          className="arrow-right"
+          variants={gameArrow}
+          animate={game ? "on" : "off"}
+        />
+      </motion.div>
 
       <motion.div
         ref={constraintsRef}
@@ -94,7 +141,7 @@ export const TechSlideshow = ({ children }) => {
                   }}
                   initial={{ height: "0rem" }}
                   whileInView={{ height: "4rem" }}
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.3 }}
                   viewport={{ once: false }}
                   className="icon"
                 >

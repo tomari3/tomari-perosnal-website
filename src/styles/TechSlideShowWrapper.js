@@ -8,10 +8,11 @@ export const TechSlideShowWrapper = styled(motion.section)`
   align-items: center;
   justify-content: space-between;
   padding: 5vh 10vw;
+  position: relative;
 
   .target {
     color: var(--primary-text);
-    background-color: var(--primary-text);
+    background-color: white;
     font-size: 0px;
     aspect-ratio: 1;
     width: 1rem;
@@ -22,7 +23,7 @@ export const TechSlideShowWrapper = styled(motion.section)`
     z-index: 1;
 
     &::before {
-      background-color: var(--primary-text);
+      background-color: white;
 
       content: "";
       position: absolute;
@@ -39,6 +40,42 @@ export const TechSlideShowWrapper = styled(motion.section)`
       content: "GAME!";
       top: -4rem;
       left: -1rem;
+    }
+  }
+
+  .arrow-wrapper {
+    .arrow {
+      position: absolute;
+      width: 0.2rem;
+      border-radius: 10px;
+      top: 70%;
+      bottom: 20vh;
+      height: 6vh;
+      background-color: red;
+    }
+
+    .arrow-left {
+      position: absolute;
+      width: 0.2rem;
+      border-radius: 10px;
+      top: 70%;
+      bottom: 20vh;
+      height: 3vh;
+      background-color: red;
+      transform-origin: top right;
+      transform: rotate(40deg);
+    }
+
+    .arrow-right {
+      position: absolute;
+      width: 0.2rem;
+      border-radius: 10px;
+      top: 70%;
+      bottom: 20vh;
+      height: 3vh;
+      transform-origin: top left;
+      background-color: red;
+      transform: rotate(-40deg);
     }
   }
 
