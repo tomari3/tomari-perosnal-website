@@ -28,9 +28,10 @@ export const Global = createGlobalStyle`
     --gradient-pink2: ${({ theme }) => theme.gradientPink2};;
     --gradient-pink3: ${({ theme }) => theme.gradientPink3};;
     
+    --default-transition: color 2s ease;
+    
     --bg-opacity: ${({ theme }) => theme.bgOpacity}
     
-    --default-transition: color 2s ease;
     
       font-size: ${px2vw(32)};
 

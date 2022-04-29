@@ -5,7 +5,7 @@ export const PopUpButton = styled.button`
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -16,8 +16,8 @@ export const PopUpButton = styled.button`
   }
 
   span {
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.5rem;
+    height: 0.1rem;
     border-radius: 10px;
     background-color: var(--primary-text);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -30,7 +30,7 @@ export const PopUpButton = styled.button`
 
     :nth-child(2) {
       opacity: ${({ open }) => (open ? "0" : "1")};
-      width: ${({ open }) => (open ? "0px" : "2rem")};
+      width: ${({ open }) => (open ? "0px" : "1.5rem")};
       transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
     }
 
