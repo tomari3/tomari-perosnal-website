@@ -12,11 +12,11 @@ import { Adobeaftereffects } from "@styled-icons/simple-icons/Adobeaftereffects"
 import { Cinema4d } from "@styled-icons/simple-icons/Cinema4d";
 import { Blender } from "@styled-icons/boxicons-logos/Blender";
 
-import { FrontEndGame } from "./FrontEndGame";
+import { MiscGame } from "./MiscGame";
 
 export const MiscSkills = () => {
   return (
-    <FrontEndGame>
+    <MiscGame>
       <Webpack />
       <Jest />
       <Git />
@@ -28,6 +28,6 @@ export const MiscSkills = () => {
       <Adobephotoshop />
       <Cinema4d />
       <Blender />
-    </FrontEndGame>
+    </MiscGame>
   );
 };

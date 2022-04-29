@@ -10,11 +10,11 @@ import { Redis } from "@styled-icons/simple-icons/Redis";
 import { Javascript } from "@styled-icons/simple-icons/Javascript";
 import { Typescript } from "@styled-icons/simple-icons/Typescript";
 
-import { FrontEndGame } from "./FrontEndGame";
+import { BackEndGame } from "./BackEndGame";
 
 export const BackEndSkills = () => {
   return (
-    <FrontEndGame>
+    <BackEndGame>
       <Nodejs />
       <Express />
       <Nestjs />
@@ -24,6 +24,6 @@ export const BackEndSkills = () => {
       <Docker />
       <Aws />
       <Redis />
-    </FrontEndGame>
+    </BackEndGame>
   );
 };
