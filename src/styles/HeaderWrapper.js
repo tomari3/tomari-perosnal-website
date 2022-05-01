@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const HeaderWrapper = styled.header`
+export const HeaderWrapper = styled(motion.header)`
   position: sticky;
   top: 0;
   background-color: transparent;
@@ -9,7 +10,6 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: relative; */
   transition: background-color 1s ease;
   z-index: 12;
 `;

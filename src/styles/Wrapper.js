@@ -34,7 +34,7 @@ export const Wrapper = styled(motion.section)`
     position: absolute;
     left: 0px;
     top: -100px;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height: 150vh;
     isolation: isolate;
