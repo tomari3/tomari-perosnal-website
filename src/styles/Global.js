@@ -15,6 +15,7 @@ export const Global = createGlobalStyle`
   body {
     background-color: var(--primary-bg);
     transition: all 1s ease;
+    position: relative;
   }
   :root {
 

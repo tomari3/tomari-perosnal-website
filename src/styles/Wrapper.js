@@ -8,7 +8,7 @@ const dotAnimation = keyframes`
     transform: translate(0,0) scale(1)
   }
   33% {
-    transform: translate(calc(var(--size)/1.2),0) scale(1.2)
+    transform: translate(calc(var(--size)/1.2),0) scale(1.6)
   }
   66% {
     transform: translate(0, calc(var(--size)/1.2))  scale(.8)

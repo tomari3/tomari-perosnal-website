@@ -8,10 +8,12 @@ import { PopUpWindow } from "../../styles/PopUpWindow";
 
 const container = {
   open: (height = 1000) => ({
+    opacity: 1,
     clipPath: `circle(${height * 2 + 400}px at top right   )`,
     padding: " 5rem 0 1rem 1rem",
   }),
   closed: {
+    opacity: 0,
     clipPath: "circle(30px at top right )",
     padding: "0rem 0 0rem 1rem",
     transition: {
