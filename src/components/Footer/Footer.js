@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import { HomeTextBlock } from "../../styles/HomeTextBlock";
 import { FooterWrapper } from "../../styles/FooterWrapper";
+import { TextLink } from "../../styles/TextLink";
+import { ArrowGrid } from "./ArrowGrid";
 
 export const Footer = () => {
   return (
@@ -12,7 +15,24 @@ export const Footer = () => {
         <motion.div className="dot pink"></motion.div>
         <motion.div className="dot white"></motion.div>
       </div>
-      <h1>Footer</h1>
+
+      <ArrowGrid />
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+        }}
+      >
+        <HomeTextBlock>
+          Tom <br /> Ari
+        </HomeTextBlock>
+        <div style={{ display: "flex", gap: "2ch" }}>
+          <TextLink>github</TextLink>
+          <TextLink>linkedin</TextLink>
+        </div>
+      </div>
     </FooterWrapper>
   );
 };

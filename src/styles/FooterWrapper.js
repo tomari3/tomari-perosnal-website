@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   background-color: transparent;
-  padding: 0 clamp(30px, 3vw, 5vw);
+  padding: 0 clamp(0px, 150vw, 20vw);
   height: 500px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   transition: background-color 1s ease;
   z-index: 12;
-  background-size: 100%;
+  overflow: hidden;
+  position: relative;
 
   ::before,
   ::after {
@@ -65,4 +66,33 @@ export const FooterWrapper = styled.footer`
       background: var(--primary-bg);
     }
   }
+
+  .grid-wrapper {
+    left: 0;
+    position: absolute;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: repeat(20, 3rem);
+    grid-template-rows: repeat(20, 3rem);
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .grid-dot-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-dot {
+    border-radius: 100%;
+    background-color: var(--primary-text);
+  }
+
+  /* .grid-dot-wrapper:hover .grid-dot {
+    transform: scale(2.5);
+  } */
 `;

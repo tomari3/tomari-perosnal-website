@@ -10,17 +10,17 @@ export const Moon = () => {
       viewBox="0 0 24 24"
     >
       <circle
-        class="sun"
+        className="sun"
         cx="12"
         cy="12"
         r="6"
         mask="url(#moon-mask)"
         fill="var(--primary-text)"
       />
-      <g class="sun-beams" stroke="var(--primary-text)">
+      <g className="sun-beams" stroke="var(--primary-text)">
         …
       </g>
-      <mask class="moon" id="moon-mask">
+      <mask className="moon" id="moon-mask">
         <rect x="0" y="0" width="100%" height="100%" fill="white" />
         <circle cx="18" cy="10" r="6" fill="black" />
       </mask>
