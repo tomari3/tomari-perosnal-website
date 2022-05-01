@@ -7,7 +7,7 @@ export const PopUpWindow = styled(motion.article)`
   flex-direction: column;
   background-color: var(--primary-bg);
   position: absolute;
-  top: calc(1rem / 2);
+  top: calc(1rem);
   right: calc(${px2vw(108)} - 1rem / 2);
   z-index: 9;
   gap: 1rem;

@@ -13,7 +13,7 @@ const placeholderText = [
 ];
 
 const paragraph = {
-  text: "self-taught full stack developer with passion and love for beautiful, pleasing front end and efficient, powerful back end.",
+  text: "I am a self-taught full stack developer with passion and love for beautiful, pleasing front end experience and efficient, powerful back end infrastructure. I am a self learner, ambitious, passionate and I am looking for my first role in the professional world",
 };
 
 const container = {

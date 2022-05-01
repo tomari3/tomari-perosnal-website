@@ -20,6 +20,7 @@ export const HomeIntroWrapper = styled(motion.section)`
   }
 
   .paragraph {
+    line-height: 2.5ch;
     padding: 0 2vw;
   }
 
