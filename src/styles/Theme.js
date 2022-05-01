@@ -1,6 +1,6 @@
 export const lightTheme = {
   primaryBG: "#F3F3F6",
-  primaryText: "#06060E",
+  primaryText: "#222222",
   primaryAccent: "#EAD7D1",
 
   gradientBlue1: "#77E5F6",
@@ -12,14 +12,14 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  primaryBG: "#121212",
+  primaryBG: "#222222",
   primaryText: "#DCDCE5",
   primaryAccent: "#EAD7D1",
 
-  gradientBlue1: "#02271E",
-  gradientBlue2: "#0B1C1D",
-  gradientBlue3: "#072022",
-  gradientPink1: "#26030C",
-  gradientPink2: "#230611",
-  gradientPink3: "#22070E",
+  gradientBlue1: "#246F8C",
+  gradientBlue2: "#1C4C5F",
+  gradientBlue3: "#0E3748",
+  gradientPink1: "#6D3883",
+  gradientPink2: "#4D3557",
+  gradientPink3: "#2A202F",
 };

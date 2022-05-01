@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 // import px2vw from "../utils/px2vw";
 
 export const HomeTextBlock = styled(motion.h1)`
-  font-size: 7vmin;
+  font-size: 8vmin;
   flex: 1;
+  font-family: "Hahmlet", serif;
   .word-wrapper {
     display: inline-block;
   }

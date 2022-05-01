@@ -7,7 +7,7 @@ import px2vw from "../utils/px2vw";
 export const TextLink = styled(motion.a)`
   color: var(--primary-text);
   font-weight: bold;
-  font-size: ${px2vw(12 * 2)};
+  font-size: 1rem;
   cursor: pointer;
   transition: var(--default-transition);
 `;

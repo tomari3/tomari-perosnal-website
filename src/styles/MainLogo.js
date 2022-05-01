@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import px2vw from "../utils/px2vw";
 
 export const MainLogo = styled.h1`
+  font-size: 1rem;
   cursor: pointer;
-  font-size: ${px2vw(24)};
   font-weight: bold;
   text-transform: uppercase;
   color: var(--primary-text);
