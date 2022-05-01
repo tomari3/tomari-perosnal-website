@@ -11,14 +11,12 @@ const clouds = {
 
 export const ColoredWrapper = (props) => {
   return (
-    <Wrapper
-      transition={clouds}
-      animate={{
-        backgroundPositionX: ["-50%", "150%", "150%", "-50%", "-50%"],
-        backgroundPositionY: ["-50%", "-50%", "150%", "150%", "-50%"],
-      }}
-    >
-      {props.children}
+    <Wrapper transition={clouds} animate={{}}>
+      <div className="animated-wrapper">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
     </Wrapper>
   );
 };

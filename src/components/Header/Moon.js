@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const Moon = () => {
   return (
     <motion.svg
-      class="sun-and-moon"
+      className="sun-and-moon"
       aria-hidden="true"
       width="24"
       height="24"

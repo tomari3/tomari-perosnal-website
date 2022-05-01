@@ -25,11 +25,10 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <Global />
-        <ColoredWrapper>
-          <Header toggle={toggleTheme} />
-          <Home />
-          <Footer />
-        </ColoredWrapper>
+        <ColoredWrapper />
+        <Header toggle={toggleTheme} />
+        <Home />
+        <Footer />
       </>
     </ThemeProvider>
   );

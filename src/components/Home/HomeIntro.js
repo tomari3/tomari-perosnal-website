@@ -4,20 +4,16 @@ import { HomeIntroWrapper } from "../../styles/HomeIntroWrapper";
 import AnimatedCharacters from "./AnimatedText";
 
 const placeholderText = [
-  { text: "self taught" },
+  { text: "hello, im tom." },
   {
-    text: "developer.",
-  },
-  { text: "life long" },
-  {
-    text: "designer.",
+    text: "web developer.",
   },
 ];
 
 const container = {
   visible: {
     transition: {
-      staggerChildren: 0.05,
+      staggerChildren: 0.03,
     },
   },
 };

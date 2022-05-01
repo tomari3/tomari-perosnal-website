@@ -1,7 +1,5 @@
 import React from "react";
 
-import { getRandom } from "../../utils/getRandom";
-
 import { motion } from "framer-motion";
 import { HomeTextBlock } from "../../styles/HomeTextBlock";
 
@@ -19,18 +17,6 @@ const AnimatedCharacters = (props) => {
       transition: {
         type: "spring",
       },
-    },
-  };
-
-  const letterHover = {
-    scale: 1.5,
-    rotate: `${getRandom(-20, 20)}deg`,
-    zIndex: 10,
-    position: "static",
-    transition: {
-      type: "spring",
-      bounce: 0.6,
-      duration: 0.5,
     },
   };
 
@@ -56,7 +42,6 @@ const AnimatedCharacters = (props) => {
                 <motion.span
                   className="letter-wrapper"
                   initial={{ overflow: "hidden", display: "inline-block" }}
-                  whileHover={letterHover}
                   key={index}
                 >
                   <motion.span className="letter" variants={item}>
