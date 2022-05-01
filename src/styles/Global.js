@@ -11,6 +11,11 @@ export const Global = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
+  body {
+    background-color: var(--primary-bg);
+    transition: all 1s ease;
+  }
   :root {
 
     
@@ -30,9 +35,10 @@ export const Global = createGlobalStyle`
     
     --default-transition: color 2s ease;
     
-    --bg-opacity: ${({ theme }) => theme.bgOpacity};;
-    
-    
+    --size: clamp(600px, 50vmax, 60vmax);
+
+    --bg-opacity: ${({ theme }) => theme.bgOpacity};;    
+
 
       @media (min-width: 768px) {
         font-size: ${px2vw(18)};

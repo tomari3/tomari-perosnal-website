@@ -3,12 +3,12 @@ export const lightTheme = {
   primaryText: "#06060E",
   primaryAccent: "#EAD7D1",
 
-  gradientBlue1: "#a4fae5",
-  gradientBlue2: "#99d2d7",
-  gradientBlue3: "#c7f0f4",
-  gradientPink1: "#f794af",
-  gradientPink2: "#ee95b5",
-  gradientPink3: "#e6859f",
+  gradientBlue1: "#77E5F6",
+  gradientBlue2: "#18CAE5",
+  gradientBlue3: "#009BB3",
+  gradientPink1: "#E683CF",
+  gradientPink2: "#B65CA2",
+  gradientPink3: "#623658",
 };
 
 export const darkTheme = {

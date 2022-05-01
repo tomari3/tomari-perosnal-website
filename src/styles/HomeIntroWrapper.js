@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const HomeIntroWrapper = styled(motion.section)`
-  padding: 3vmax;
+  padding: 10vmax 10vw;
   height: 130vh;
   display: flex;
   flex-wrap: wrap;

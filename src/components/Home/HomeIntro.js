@@ -4,9 +4,9 @@ import { HomeIntroWrapper } from "../../styles/HomeIntroWrapper";
 import AnimatedCharacters from "./AnimatedText";
 
 const placeholderText = [
-  { text: "hello, im tom." },
+  { text: "Hello, I'm Tom." },
   {
-    text: "web developer.",
+    text: "Web Developer.",
   },
 ];
 
