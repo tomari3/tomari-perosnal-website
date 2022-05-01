@@ -1,9 +1,9 @@
 import React, { useState } from "react"; // import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
-import { ThemeProvider } from "styled-components";
-
-import Global from "./styles/Global";
 import { lightTheme, darkTheme } from "./styles/Theme";
+import { ThemeProvider } from "styled-components";
+import Global from "./styles/Global";
 
 import { Home } from "./components/Home/Home";
 import { Header } from "./components/Header/Header";
@@ -24,12 +24,16 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
+        <Header toggle={toggleTheme} />
         <Global />
         <ColoredWrapper />
-        <Header toggle={toggleTheme} />
-        <Home />
-        <Footer />
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />} />
+          </Routes>
+        </BrowserRouter>
       </>
+      <Footer />
     </ThemeProvider>
   );
 }
