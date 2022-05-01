@@ -19,7 +19,13 @@ const titlesTransition = {
 
 export const SkillsSection = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div
+      style={{
+        overflow: "hidden",
+        backgroundColor: "var(--primary-bg)",
+        transition: "background-color 1s ease",
+      }}
+    >
       <div
         style={{
           height: "150vh",
