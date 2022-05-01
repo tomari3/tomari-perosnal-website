@@ -6,7 +6,7 @@ import { BackEndSkills } from "./BackEndSkills";
 import { MiscSkills } from "./MiscSkills";
 
 const titles = {
-  main: "i know things",
+  main: "I can work with these technologies",
   front: "front end",
   back: "back end",
   misc: "and all around",
