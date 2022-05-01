@@ -68,12 +68,12 @@ export const FooterWrapper = styled.footer`
   }
 
   .grid-wrapper {
-    left: 0;
+    left: clamp(0px, 10%, 20%);
     position: absolute;
     aspect-ratio: 1;
     display: grid;
-    grid-template-columns: repeat(20, 3rem);
-    grid-template-rows: repeat(20, 3rem);
+    grid-template-columns: repeat(20, minmax(1rem, 2vw));
+    grid-template-rows: repeat(20, minmax(1rem, 2vw));
     justify-content: center;
     align-items: center;
     z-index: -1;

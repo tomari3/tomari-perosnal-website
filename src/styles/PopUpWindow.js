@@ -9,6 +9,7 @@ export const PopUpWindow = styled(motion.article)`
   position: absolute;
   top: calc(1rem);
   right: calc(${px2vw(108)} - 1rem / 2);
+  width: 150px;
   z-index: 9;
   gap: 1rem;
   border-radius: 10px;

@@ -22,12 +22,13 @@ export const ArrowGrid = () => {
         calculateDistance(gridRefs.current[i], mouseX, mouseY, windowTopOffset)
           .y / 500
       }rem` || 2,
-    y:
+    y: `${
       (calculateDistance(gridRefs.current[i], mouseX, mouseY, windowTopOffset)
         .x *
         calculateDistance(gridRefs.current[i], mouseX, mouseY, windowTopOffset)
           .y) /
-      1000,
+      1000
+    }%`,
     rotate:
       (calculateDistance(gridRefs.current[i], mouseX, mouseY, windowTopOffset)
         .x *

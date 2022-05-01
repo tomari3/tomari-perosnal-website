@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-export const TextLink = styled(motion.a)`
+export const TextLink = styled(Link)`
   color: var(--primary-text);
   font-weight: ${(props) => (props.bold ? "bold" : "400")};
   font-size: 1rem;

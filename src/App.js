@@ -24,18 +24,32 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
-        <Header toggle={toggleTheme} />
         <Global />
         <ColoredWrapper />
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home />} />
+            <Route
+              path="/"
+              element={<LayoutsWithNavbar toggle={toggleTheme} />}
+            >
+              <Route path="/" element={<Home />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </>
-      <Footer />
     </ThemeProvider>
   );
 }
 
+function LayoutsWithNavbar({ toggle }) {
+  return (
+    <>
+      <Header toggle={toggle} />
+
+      <Outlet />
+
+      <Footer />
+    </>
+  );
+}
 export default App;

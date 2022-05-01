@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 
 import { HomeTextBlock } from "../../styles/HomeTextBlock";
@@ -29,8 +31,8 @@ export const Footer = () => {
           Tom <br /> Ari
         </HomeTextBlock>
         <div style={{ display: "flex", gap: "2ch" }}>
-          <TextLink>github</TextLink>
-          <TextLink>linkedin</TextLink>
+          <TextLink to="github">github</TextLink>
+          <TextLink to="linkedin">linkedin</TextLink>
         </div>
       </div>
     </FooterWrapper>

@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useDimensions } from "../../hooks/useDimensions";
 
+import { motion } from "framer-motion";
+
 import { TextLink } from "../../styles/TextLink";
 import { ThemeButton } from "./ThemeButton";
 import { PopUpButton } from "../../styles/PopUpButton";
@@ -63,6 +65,7 @@ export const PopUpMenu = ({ open, setOpen, toggle }) => {
         ref={containerRef}
       >
         <TextLink
+          to="about"
           animate={open ? "open" : "closed"}
           whileHover={{ x: 10 }}
           variants={child}
@@ -70,6 +73,7 @@ export const PopUpMenu = ({ open, setOpen, toggle }) => {
           about
         </TextLink>
         <TextLink
+          to="projects"
           animate={open ? "open" : "closed"}
           whileHover={{ x: 10 }}
           variants={child}
@@ -77,6 +81,7 @@ export const PopUpMenu = ({ open, setOpen, toggle }) => {
           projects
         </TextLink>
         <TextLink
+          to="contact"
           animate={open ? "open" : "closed"}
           whileHover={{ x: 10 }}
           variants={child}
@@ -84,6 +89,7 @@ export const PopUpMenu = ({ open, setOpen, toggle }) => {
           contact
         </TextLink>
         <TextLink
+          to="resume"
           animate={open ? "open" : "closed"}
           whileHover={{ x: 10 }}
           variants={child}
