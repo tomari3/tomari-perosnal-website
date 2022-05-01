@@ -14,7 +14,7 @@ export const Header = ({ toggle }) => {
 
   return (
     <HeaderWrapper>
-      <MainLogo>tom ari</MainLogo>
+      <MainLogo>ta</MainLogo>
       {width < 590 ? (
         <PopUpMenu toggle={toggle} open={open} setOpen={setOpen} />
       ) : (

@@ -5,16 +5,16 @@ import { motion } from "framer-motion";
 const dotAnimation = keyframes`
 
   0% {
-    transform: translate(0,0)
+    transform: translate(0,0) scale(1)
   }
   33% {
-    transform: translate(calc(var(--size)/1.5),0)
+    transform: translate(calc(var(--size)/1.2),0) scale(1.2)
   }
   66% {
-    transform: translate(0, calc(var(--size)/1.5))
+    transform: translate(0, calc(var(--size)/1.2))  scale(.8)
   }
   100% {
-    transform: translate(0,0)
+    transform: translate(0,0) scale(1)
   }
 `;
 
@@ -48,12 +48,12 @@ export const Wrapper = styled(motion.section)`
     top: calc(var(--size) / 3 * -1);
     width: var(--size);
     height: var(--size);
-    mix-blend-mode: soft-light;
+    mix-blend-mode: screen;
     border-radius: var(--size);
     filter: blur(calc(var(--size) / 6));
     will-change: transform;
     display: block;
-    animation: ${dotAnimation} ease-in-out 20s infinite;
+    animation: ${dotAnimation} cubic-bezier(0.65, 0, 0.35, 1) 20s infinite;
 
     :nth-child(1) {
       background: var(--gradient-blue1);
