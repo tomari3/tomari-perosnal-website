@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { useDimensions } from "../../hooks/useDimensions";
 
-import { motion } from "framer-motion";
-
 import { TextLink } from "../../styles/TextLink";
 import { ThemeButton } from "./ThemeButton";
 import { PopUpButton } from "../../styles/PopUpButton";
@@ -20,27 +18,6 @@ const container = {
     padding: "0rem 0 0rem 1rem",
     transition: {
       duration: 0.2,
-    },
-  },
-};
-
-const child = {
-  open: {
-    padding: "0rem 5rem 0rem 1rem",
-    opacity: 1,
-    transition: {
-      delay: 0.2,
-      opacity: {
-        duration: 0.5,
-      },
-    },
-  },
-  closed: {
-    opacity: 0,
-    transition: {
-      opacity: {
-        duration: 0.1,
-      },
     },
   },
 };
@@ -64,36 +41,16 @@ export const PopUpMenu = ({ open, setOpen, toggle }) => {
         custom={height}
         ref={containerRef}
       >
-        <TextLink
-          to="about"
-          animate={open ? "open" : "closed"}
-          whileHover={{ x: 10 }}
-          variants={child}
-        >
+        <TextLink vertical to="about">
           about
         </TextLink>
-        <TextLink
-          to="projects"
-          animate={open ? "open" : "closed"}
-          whileHover={{ x: 10 }}
-          variants={child}
-        >
+        <TextLink vertical to="projects">
           projects
         </TextLink>
-        <TextLink
-          to="contact"
-          animate={open ? "open" : "closed"}
-          whileHover={{ x: 10 }}
-          variants={child}
-        >
+        <TextLink vertical to="contact">
           contact
         </TextLink>
-        <TextLink
-          to="resume"
-          animate={open ? "open" : "closed"}
-          whileHover={{ x: 10 }}
-          variants={child}
-        >
+        <TextLink vertical to="resume">
           resume
         </TextLink>
         <ThemeButton toggle={toggle}></ThemeButton>

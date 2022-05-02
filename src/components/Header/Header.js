@@ -7,6 +7,7 @@ import { HeaderWrapper } from "../../styles/HeaderWrapper";
 import { MainLogo } from "../../styles/MainLogo";
 import { NavBar } from "./NavBar";
 import { PopUpMenu } from "./PopUpMenu";
+import { TextLink } from "../../styles/TextLink";
 
 export const Header = ({ toggle }) => {
   const [open, setOpen] = useState(false);
@@ -16,7 +17,9 @@ export const Header = ({ toggle }) => {
 
   return (
     <HeaderWrapper>
-      <MainLogo>ta</MainLogo>
+      <TextLink to="/">
+        <MainLogo>TA</MainLogo>
+      </TextLink>
       {width < 590 || scrollHeight > 1600 ? (
         <PopUpMenu toggle={toggle} open={open} setOpen={setOpen} />
       ) : (
