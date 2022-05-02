@@ -73,8 +73,8 @@ export const FooterWrapper = styled.footer`
     position: absolute;
     aspect-ratio: 1;
     display: grid;
-    grid-template-columns: repeat(20, minmax(1rem, 2vw));
-    grid-template-rows: repeat(20, minmax(1rem, 2vw));
+    grid-template-columns: repeat(20, minmax(1rem, 3vw));
+    grid-template-rows: repeat(20, minmax(1rem, 3vw));
     justify-content: center;
     align-items: center;
     z-index: -1;
@@ -89,7 +89,6 @@ export const FooterWrapper = styled.footer`
   }
 
   .grid-dot {
-    border-radius: 100%;
     background-color: var(--primary-text);
   }
 

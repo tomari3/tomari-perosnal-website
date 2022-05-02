@@ -10,18 +10,16 @@ export const Global = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
   }
 
   html {
+    scroll-behavior: smooth;
   }
 
   body {
     background-color: var(--primary-bg);
     transition: all 1s ease;
     position: relative;
-    scroll-behavior: smooth;
-
     
   }
   :root {
