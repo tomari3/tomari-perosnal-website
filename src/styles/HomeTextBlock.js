@@ -8,7 +8,7 @@ export const HomeTextBlock = styled(motion.h1)`
   flex: 1;
   font-family: "Hahmlet", serif;
   color: var(--primary-text);
-
+  height: min-content;
   .word-wrapper {
     display: inline-block;
   }

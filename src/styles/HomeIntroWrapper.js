@@ -24,6 +24,10 @@ export const HomeIntroWrapper = styled(motion.section)`
     padding: 0 2vw;
   }
 
+  .text-justify {
+    text-align: justify;
+  }
+
   .piece {
     min-width: 400px;
     display: flex;
