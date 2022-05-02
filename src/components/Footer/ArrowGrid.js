@@ -3,13 +3,20 @@ import { motion } from "framer-motion";
 
 import { calculateDistance } from "../../utils/calculateMouseDistance";
 import { useMousePosition } from "../../hooks/useMousePosition";
+import { useScroll } from "../../hooks/useScroll";
 
 export const ArrowGrid = () => {
+  const containerRef = useRef(null);
+
   const { x: mouseX, y: mouseY } = useMousePosition();
   const gridRefs = useRef([]);
+  const scrollPos = useScroll();
 
-  const windowTopOffset =
-    window.scrollY || window.pageYOffset || document.body.scrollTop || 0;
+  const windowTopOffset = scrollPos;
+
+  const show = () => {
+    return containerRef.current.offsetParent.offsetTop - scrollPos < 1100;
+  };
 
   const dotStyle = (i) => ({
     width:
@@ -51,5 +58,9 @@ export const ArrowGrid = () => {
     );
   });
 
-  return <div className="grid-wrapper">{Grid}</div>;
+  return (
+    <div ref={containerRef} className="grid-wrapper">
+      {show() ? Grid : null}
+    </div>
+  );
 };

@@ -6,6 +6,7 @@ import { HomeTextBlock } from "../../styles/HomeTextBlock";
 import { FooterWrapper } from "../../styles/FooterWrapper";
 import { TextLink } from "../../styles/TextLink";
 import { ArrowGrid } from "./ArrowGrid";
+import { ExternalLink } from "../../styles/ExternalLink";
 
 export const Footer = () => {
   return (
@@ -30,8 +31,10 @@ export const Footer = () => {
           Tom <br /> Ari
         </HomeTextBlock>
         <div style={{ display: "flex", gap: "2ch" }}>
-          <TextLink to="github">github</TextLink>
-          <TextLink to="linkedin">linkedin</TextLink>
+          <ExternalLink to="https://github.com/tomari3">github</ExternalLink>
+          <ExternalLink to="https://www.linkedin.com/in/tom-ari-72034122a">
+            linkedin
+          </ExternalLink>
         </div>
       </div>
     </FooterWrapper>
