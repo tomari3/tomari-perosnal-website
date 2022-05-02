@@ -12,6 +12,6 @@ export const TextLink = styled(Link)`
 
   &:hover {
     transform: ${(props) =>
-      props.horizontal ? "translateY(4px)" : "translateX(10px)"};
+      props.$horizontal ? "translateY(4px)" : "translateX(10px)"};
   }
 `;

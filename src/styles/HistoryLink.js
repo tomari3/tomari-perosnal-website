@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const HistoryLink = styled(motion.span)`
   color: var(--primary-text);
-  font-weight: ${(props) => (props.bold ? "bold" : "400")};
+  font-weight: ${(props) => (props.$bold ? "bold" : "400")};
   font-size: 1rem;
   cursor: pointer;
   transition: var(--default-transition), width 0.5s ease;
