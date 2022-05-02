@@ -12,13 +12,14 @@ export const FooterWrapper = styled.footer`
   overflow: hidden;
   position: relative;
 
-  ::before,
-  ::after {
+  &::before {
     content: "";
-    display: table;
-  }
-  ::after {
-    clear: both;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 80% / 2);
+    width: 80%;
+    height: 1px;
+    background-color: black;
   }
 
   .animated-wrapper {

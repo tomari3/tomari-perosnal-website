@@ -10,6 +10,5 @@ export const SubWrapper = styled.section`
     width: 80%;
     left: calc(50% - 80% / 2);
     bottom: 0;
-    border-bottom: 1px solid black;
   }
 `;

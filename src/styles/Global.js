@@ -12,6 +12,10 @@ export const Global = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--primary-bg);
     transition: all 1s ease;

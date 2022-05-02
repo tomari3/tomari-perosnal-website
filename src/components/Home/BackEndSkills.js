@@ -9,7 +9,6 @@ import { Aws } from "@styled-icons/fa-brands/Aws";
 import { Redis } from "@styled-icons/simple-icons/Redis";
 import { Javascript } from "@styled-icons/simple-icons/Javascript";
 import { Typescript } from "@styled-icons/simple-icons/Typescript";
-
 import { BackEndGame } from "./BackEndGame";
 
 export const BackEndSkills = () => {
