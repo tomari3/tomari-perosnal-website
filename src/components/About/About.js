@@ -1,10 +1,12 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { motion } from "framer-motion";
 
 import { HomeIntroWrapper } from "../../styles/HomeIntroWrapper";
 import AnimatedCharacters from "../Home/AnimatedText";
-import { TextLink } from "../../styles/TextLink";
+import { HistoryLink } from "../../styles/HistoryLink";
 
 const placeholderText = [{ text: "About" }];
 const paragraph = {
@@ -19,6 +21,11 @@ const container = {
   },
 };
 export const About = () => {
+  const history = useNavigate();
+  const linkContact = () => {
+    history("/contact");
+  };
+
   return (
     <HomeIntroWrapper initial="hidden" animate={"visible"} variants={container}>
       <div className="text">
@@ -33,7 +40,12 @@ export const About = () => {
           transition={{ duration: 1, ease: "anticipate", delay: 0.3 }}
           className="paragraph text-justify"
         >
-          <p>{paragraph.text}</p>
+          <p>
+            {paragraph.text}
+            <HistoryLink bold onClick={linkContact}>
+              {paragraph.link}
+            </HistoryLink>
+          </p>
         </motion.div>
       </div>
     </HomeIntroWrapper>

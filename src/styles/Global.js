@@ -20,6 +20,7 @@ export const Global = createGlobalStyle`
     background-color: var(--primary-bg);
     transition: all 1s ease;
     position: relative;
+    
   }
   :root {
 
@@ -45,13 +46,13 @@ export const Global = createGlobalStyle`
     --bg-opacity: ${({ theme }) => theme.bgOpacity};;    
 
 
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
         font-size: ${px2vw(18)};
       }
 
       @media (min-width: 1024px) {
         font-size: ${px2vw(16)};
-      }
+      } */
     }
 `;
 
