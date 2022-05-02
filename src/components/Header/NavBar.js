@@ -16,16 +16,16 @@ export const NavBar = ({ toggle }) => {
     <motion.nav style={style}>
       <ThemeButton toggle={toggle}></ThemeButton>
 
-      <TextLink to="about " horizontal>
+      <TextLink to="about " $horizontal>
         about
       </TextLink>
-      <TextLink to="projects" horizontal>
+      <TextLink to="projects" $horizontal>
         projects
       </TextLink>
-      <TextLink to="contact" horizontal>
+      <TextLink to="contact" $horizontal>
         contact
       </TextLink>
-      <TextLink to="resume" horizontal>
+      <TextLink to="resume" $horizontal>
         resume
       </TextLink>
     </motion.nav>

@@ -1,12 +1,12 @@
 // https://jsfiddle.net/chriscoyier/t5Kts/
 
-export const calculateDistance = (ref, mouseX, mouseY) => {
+export const calculateDistance = (ref, mouseX, mouseY, scrollPos) => {
   if (ref === undefined) {
     return { x: 1, y: 1 };
   }
 
   const y = Math.floor(
-    Math.sqrt(Math.pow(mouseY - (ref.offsetHeight + ref.clientHeight) - 700, 2))
+    Math.sqrt(Math.pow(mouseY - (ref.offsetHeight + ref.clientHeight), 2))
   );
   const x = Math.floor(
     Math.sqrt(Math.pow(mouseX - (ref.offsetLeft + ref.clientWidth), 2))

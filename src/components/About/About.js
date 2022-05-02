@@ -42,7 +42,7 @@ export const About = () => {
         >
           <p>
             {paragraph.text}
-            <HistoryLink bold onClick={linkContact}>
+            <HistoryLink $bold onClick={linkContact}>
               {paragraph.link}
             </HistoryLink>
           </p>

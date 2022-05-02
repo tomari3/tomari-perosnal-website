@@ -45,7 +45,7 @@ export const SkillsSection = () => {
       </div>
       <div>
         <Title
-          sub
+          $sub
           style={{ padding: "15vh" }}
           transition={titlesTransition}
           initial={{ x: -200, opacity: 0 }}
@@ -59,7 +59,7 @@ export const SkillsSection = () => {
 
       <div>
         <Title
-          sub
+          $sub
           style={{ padding: "15vh" }}
           transition={titlesTransition}
           initial={{ x: 200, opacity: 0 }}
@@ -73,7 +73,7 @@ export const SkillsSection = () => {
 
       <div>
         <Title
-          sub
+          $sub
           transition={titlesTransition}
           style={{ padding: "15vh" }}
           initial={{ x: -200, opacity: 0 }}

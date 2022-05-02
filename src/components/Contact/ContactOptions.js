@@ -20,7 +20,7 @@ const contactList = [
 export const ContactOptions = () => {
   const links = contactList.map((item, index) => {
     return (
-      <ExternalLink bold size="8vmax" key={index} href={item.link}>
+      <ExternalLink $bold size="8vmax" key={index} href={item.link}>
         {item.text}
       </ExternalLink>
     );
