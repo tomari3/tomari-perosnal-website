@@ -1,7 +1,5 @@
 import React from "react";
 
-import { motion } from "framer-motion";
-
 import { ExternalLink } from "../../styles/ExternalLink";
 
 const contactList = [
@@ -22,7 +20,7 @@ const contactList = [
 export const ContactOptions = () => {
   const links = contactList.map((item, index) => {
     return (
-      <ExternalLink bold size="5rem" key={index} href={item.link}>
+      <ExternalLink bold size="8vmax" key={index} href={item.link}>
         {item.text}
       </ExternalLink>
     );

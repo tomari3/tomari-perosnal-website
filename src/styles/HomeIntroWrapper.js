@@ -11,10 +11,10 @@ export const HomeIntroWrapper = styled(motion.section)`
 
   .text {
     display: flex;
-    flex-direction: column;
+    flex-direction: ${(props) => (props.row ? "row" : "column")};
+    flex-wrap: wrap;
     gap: 5vh;
-    max-width: 800px;
-    background-color: aliceblue;
+    /* max-width: 800px; */
     height: min-content;
   }
 
@@ -24,10 +24,13 @@ export const HomeIntroWrapper = styled(motion.section)`
   .container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
+
+    gap: 1rem;
   }
 
   .paragraph {
+    max-width: 800px;
     line-height: 2.5ch;
     padding: 0 2vw;
   }

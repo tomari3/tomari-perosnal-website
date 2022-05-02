@@ -7,7 +7,6 @@ export const ExternalLink = styled(motion.a)`
   font-size: ${(props) => (props.size ? props.size : "1rem")};
   cursor: pointer;
   transition: var(--default-transition), width 0.5s ease, transform 0.5s ease;
-  padding: 0 1ch;
   text-decoration: none;
   position: relative;
 
@@ -17,7 +16,7 @@ export const ExternalLink = styled(motion.a)`
   }
 
   &::after {
-    transition: var(--default-transition), all 0.5s ease;
+    transition: var(--default-transition), width 0.5s ease;
     --width: 0;
     z-index: -1;
     background-color: var(--primary-bg);
@@ -25,11 +24,11 @@ export const ExternalLink = styled(motion.a)`
     content: "";
     height: 1rem;
     bottom: 0;
-    left: 1ch;
+    left: 0;
     width: var(--width);
   }
 
   &:hover::after {
-    --width: calc(100% - 2ch);
+    --width: calc(100%);
   }
 `;
