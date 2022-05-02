@@ -14,9 +14,17 @@ export const HomeIntroWrapper = styled(motion.section)`
     flex-direction: column;
     gap: 5vh;
     max-width: 800px;
+    background-color: aliceblue;
+    height: min-content;
   }
 
   .main-text {
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 
   .paragraph {
@@ -27,7 +35,6 @@ export const HomeIntroWrapper = styled(motion.section)`
   .text-justify {
     text-align: justify;
   }
-
   .piece {
     min-width: 400px;
     display: flex;

@@ -24,15 +24,15 @@ export const Contact = () => {
             return <AnimatedCharacters {...item} key={index} />;
           })}
         </div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "anticipate", delay: 0.3 }}
-          className="paragraph text-justify"
-        >
-          <ContactOptions />
-        </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "anticipate", delay: 0.3 }}
+        className="container"
+      >
+        <ContactOptions />
+      </motion.div>
     </HomeIntroWrapper>
   );
 };

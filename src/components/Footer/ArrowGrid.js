@@ -15,7 +15,11 @@ export const ArrowGrid = () => {
   const windowTopOffset = scrollPos;
 
   const show = () => {
-    return containerRef.current.offsetParent.offsetTop - scrollPos < 1100;
+    if (containerRef.current === null) {
+      return;
+    }
+    const offset = containerRef.current.offsetParent.offsetTop;
+    return offset - scrollPos < 1100;
   };
 
   const dotStyle = (i) => ({
