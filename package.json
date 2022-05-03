@@ -1,8 +1,8 @@
 {
-  "homepage": "https://tomari3.github.io",
+  "homepage": "https://myusername.github.io/my-app",
   "name": "tomari-personal-website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@react-three/cannon": "^6.3.0",
     "@react-three/drei": "^9.5.3",
