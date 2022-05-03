@@ -65,7 +65,7 @@ export const ArrowGrid = () => {
       rotate: (x * y) / 360,
       y: Y * X * 0.00008 + xCircle * 5,
       x: (Y / X) * 0.0008 + yCircle * 5,
-      borderRadius: 100 - Y * X,
+      borderRadius: 100 - Y * X * 0.0003,
       opacity: 0.8 - Y * X * 0.0000027 - i * 0.0001,
       scale: 1 - x * y * 0.000015,
 
