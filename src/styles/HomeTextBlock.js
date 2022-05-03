@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const HomeTextBlock = styled(motion.h1)`
   font-size: 8vmin;
   flex: 1;
-  font-family: "Hahmlet", serif;
+  font-family: var(--head-font);
   color: var(--primary-text);
   height: min-content;
   .word-wrapper {

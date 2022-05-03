@@ -24,9 +24,8 @@ export const Global = createGlobalStyle`
   }
   :root {
 
-    
-    
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    --head-font: 'Hamlet', serif;
     
     --primary-bg: ${({ theme }) => theme.primaryBG};
     --primary-text: ${({ theme }) => theme.primaryText};
