@@ -1,20 +1,12 @@
 import React, { useState } from "react"; // import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { lightTheme, darkTheme } from "./styles/Theme";
 import { ThemeProvider } from "styled-components";
 import Global from "./styles/Global";
 
-import ScrollToTop from "./hooks/ScrollToTop";
-
-import { Home } from "./components/Home/Home";
-import { Header } from "./components/Header/Header";
-import { Footer } from "./components/Footer/Footer";
 import { ColoredWrapper } from "./components/Home/ColoredWrapper";
-import { About } from "./components/About/About";
-import { Projects } from "./components/Projects/Projects";
-import { Contact } from "./components/Contact/Contact";
-import { Resume } from "./components/Resume/Resume";
+import { AnimatedRoutes } from "./components/AnimatedRoutes";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -33,34 +25,11 @@ function App() {
         <Global />
         <ColoredWrapper />
         <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route
-              path="/"
-              element={<LayoutsWithNavbar toggle={toggleTheme} />}
-            >
-              <Route path="/" element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="resume" element={<Resume />} />
-            </Route>
-          </Routes>
+          <AnimatedRoutes toggle={toggleTheme} />
         </BrowserRouter>
       </>
     </ThemeProvider>
   );
 }
 
-function LayoutsWithNavbar({ toggle }) {
-  return (
-    <>
-      <Header toggle={toggle} />
-
-      <Outlet />
-
-      <Footer />
-    </>
-  );
-}
 export default App;

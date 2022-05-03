@@ -14,10 +14,20 @@ const container = {
       staggerChildren: 0.03,
     },
   },
+  exit: {
+    transition: {
+      staggerChildren: 0.03,
+    },
+  },
 };
 export const Contact = () => {
   return (
-    <HomeIntroWrapper initial="hidden" animate={"visible"} variants={container}>
+    <HomeIntroWrapper
+      initial="hidden"
+      animate={"visible"}
+      exit={"exit"}
+      variants={container}
+    >
       <div className="text">
         <div className="main-text">
           {placeholderText.map((item, index) => {
@@ -26,6 +36,7 @@ export const Contact = () => {
         </div>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
+          exit={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "anticipate", delay: 0.3 }}
           className="container"

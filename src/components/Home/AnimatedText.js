@@ -12,6 +12,9 @@ const AnimatedCharacters = (props) => {
     hidden: {
       y: "100%",
     },
+    exit: {
+      y: "100%",
+    },
     visible: {
       y: 0,
       transition: {

@@ -11,10 +11,20 @@ const container = {
       staggerChildren: 0.03,
     },
   },
+  exit: {
+    transition: {
+      staggerChildren: 0.03,
+    },
+  },
 };
 export const Projects = () => {
   return (
-    <HomeIntroWrapper initial="hidden" animate={"visible"} variants={container}>
+    <HomeIntroWrapper
+      exit={"exit"}
+      initial="hidden"
+      animate={"visible"}
+      variants={container}
+    >
       {placeholderText.map((item, index) => {
         return <AnimatedCharacters {...item} key={index} />;
       })}

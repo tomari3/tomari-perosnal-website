@@ -17,7 +17,6 @@ export const HomeTextBlock = styled(motion.h1)`
     font-weight: bold;
     transition: var(--default-transition);
     color: var(--primary-text);
-    cursor: default;
     display: inline-block;
   }
 `;
