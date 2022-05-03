@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 import { HomeTextBlock } from "../../styles/HomeTextBlock";
 import { FooterWrapper } from "../../styles/FooterWrapper";
-import { TextLink } from "../../styles/TextLink";
 import { ArrowGrid } from "./ArrowGrid";
 import { ExternalLink } from "../../styles/ExternalLink";
 

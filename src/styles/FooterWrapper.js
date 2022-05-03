@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   background-color: transparent;
-  padding: 0 clamp(0px, 150vw, 20vw);
   height: 500px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
   transition: background-color 1s ease;
   z-index: 8;
@@ -69,12 +68,20 @@ export const FooterWrapper = styled.footer`
   }
 
   .grid-wrapper {
-    left: clamp(0px, 10%, 20%);
-    position: absolute;
+    /* position: absolute; */
+    --grid-size: 30vmin;
+    --grid-line: 20;
+    height: var(--grid-size);
     aspect-ratio: 1;
     display: grid;
-    grid-template-columns: repeat(20, minmax(1rem, 3vw));
-    grid-template-rows: repeat(20, minmax(1rem, 3vw));
+    grid-template-columns: repeat(
+      var(--grid-line),
+      calc(var(--grid-size) / var(--grid-line))
+    );
+    grid-template-rows: repeat(
+      var(--grid-line),
+      calc(var(--grid-size) / var(--grid-line))
+    );
     justify-content: center;
     align-items: center;
     z-index: -1;
@@ -89,7 +96,10 @@ export const FooterWrapper = styled.footer`
   }
 
   .grid-dot {
+    mix-blend-mode: overlay;
     background-color: var(--primary-text);
+    transform-origin: center;
+    filter: blur(2px);
   }
 
   /* .grid-dot-wrapper:hover .grid-dot {
