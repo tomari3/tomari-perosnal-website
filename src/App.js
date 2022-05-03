@@ -24,7 +24,7 @@ function App() {
       <>
         <Global />
         <ColoredWrapper />
-        <HashRouter basename="/">
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <AnimatedRoutes toggle={toggleTheme} />
         </HashRouter>
       </>
