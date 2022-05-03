@@ -24,7 +24,7 @@ function App() {
       <>
         <Global />
         <ColoredWrapper />
-        <HashRouter>
+        <HashRouter basename="/">
           <AnimatedRoutes toggle={toggleTheme} />
         </HashRouter>
       </>
