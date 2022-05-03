@@ -31,8 +31,8 @@ export const Footer = () => {
           Tom <br /> Ari
         </HomeTextBlock>
         <div style={{ display: "flex", gap: "2ch" }}>
-          <ExternalLink to="https://github.com/tomari3">github</ExternalLink>
-          <ExternalLink to="https://www.linkedin.com/in/tom-ari-72034122a">
+          <ExternalLink href="https://github.com/tomari3">github</ExternalLink>
+          <ExternalLink href="https://www.linkedin.com/in/tom-ari-72034122a">
             linkedin
           </ExternalLink>
         </div>

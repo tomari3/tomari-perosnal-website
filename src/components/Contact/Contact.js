@@ -11,12 +11,14 @@ const placeholderText = [{ text: "Contact Me!" }];
 const container = {
   visible: {
     transition: {
+      when: "beforeChildren",
       staggerChildren: 0.03,
     },
   },
   exit: {
     transition: {
-      staggerChildren: 0.03,
+      duration: 0.1,
+      staggerChildren: 0.01,
     },
   },
 };
@@ -38,7 +40,7 @@ export const Contact = () => {
           initial={{ opacity: 0, scale: 0 }}
           exit={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "anticipate", delay: 0.3 }}
+          transition={{ duration: 1, ease: "anticipate" }}
           className="container"
         >
           <ContactOptions />

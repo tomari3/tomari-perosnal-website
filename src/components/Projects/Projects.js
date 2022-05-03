@@ -8,12 +8,14 @@ const placeholderText = [{ text: "Projects" }];
 const container = {
   visible: {
     transition: {
+      when: "beforeChildren",
       staggerChildren: 0.03,
     },
   },
   exit: {
     transition: {
-      staggerChildren: 0.03,
+      duration: 0.1,
+      staggerChildren: 0.01,
     },
   },
 };
