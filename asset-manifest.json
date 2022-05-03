@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/tomari-perosnal-website/static/js/main.5b5f4ef0.js",
+    "main.js": "/tomari-perosnal-website/static/js/main.1d4c4711.js",
     "index.html": "/tomari-perosnal-website/index.html",
-    "main.5b5f4ef0.js.map": "/tomari-perosnal-website/static/js/main.5b5f4ef0.js.map"
+    "main.1d4c4711.js.map": "/tomari-perosnal-website/static/js/main.1d4c4711.js.map"
   },
   "entrypoints": [
-    "static/js/main.5b5f4ef0.js"
+    "static/js/main.1d4c4711.js"
   ]
 }
