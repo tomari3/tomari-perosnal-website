@@ -16,7 +16,7 @@ export const NavBar = ({ toggle }) => {
     <motion.nav style={style}>
       <ThemeButton toggle={toggle}></ThemeButton>
 
-      <TextLink to="about " $horizontal>
+      <TextLink to="about" $horizontal>
         about
       </TextLink>
       <TextLink to="projects" $horizontal>

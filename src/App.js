@@ -1,5 +1,5 @@
 import React, { useState } from "react"; // import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import { lightTheme, darkTheme } from "./styles/Theme";
 import { ThemeProvider } from "styled-components";
@@ -24,9 +24,9 @@ function App() {
       <>
         <Global />
         <ColoredWrapper />
-        <BrowserRouter>
+        <HashRouter>
           <AnimatedRoutes toggle={toggleTheme} />
-        </BrowserRouter>
+        </HashRouter>
       </>
     </ThemeProvider>
   );
