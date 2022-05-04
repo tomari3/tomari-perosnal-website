@@ -99,7 +99,7 @@ export const FooterWrapper = styled.footer`
     mix-blend-mode: overlay;
     background-color: var(--primary-text);
     transform-origin: center;
-    filter: blur(2px);
+    /* filter: blur(2px); */
   }
 
   /* .grid-dot-wrapper:hover .grid-dot {

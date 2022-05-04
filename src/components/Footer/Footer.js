@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { HomeTextBlock } from "../../styles/HomeTextBlock";
 import { FooterWrapper } from "../../styles/FooterWrapper";
-import { ArrowGrid } from "./ArrowGrid";
+import { MemoizedArrowGrid } from "./ArrowGrid";
 import { ExternalLink } from "../../styles/ExternalLink";
 
 export const Footer = () => {
@@ -17,7 +17,7 @@ export const Footer = () => {
         <motion.div className="dot white"></motion.div>
       </div>
 
-      <ArrowGrid />
+      <MemoizedArrowGrid />
 
       <div
         style={{

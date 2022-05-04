@@ -21,7 +21,7 @@ export const ArrowGrid = () => {
 
   const show = () => {
     const offset = containerRef.current.offsetParent.offsetTop;
-    offset - scrollPos < 1100 ? setVisible(true) : setVisible(false);
+    offset - scrollPos < 1200 ? setVisible(true) : setVisible(false);
   };
 
   const dotStyle = (i) => {
@@ -34,41 +34,41 @@ export const ArrowGrid = () => {
 
     const [X, Y] = [Math.abs(x), Math.abs(y)]; // absolute values
 
-    const [xIndex, yIndex] = [
-      Math.floor(i / Math.sqrt(grid.length)),
-      Math.floor(i % Math.sqrt(grid.length)),
-    ];
+    // const [xIndex, yIndex] = [
+    //   Math.floor(i / Math.sqrt(grid.length)),
+    //   Math.floor(i % Math.sqrt(grid.length)),
+    // ];
 
-    const xMiddle =
-      xIndex < Math.sqrt(grid.length) / 2
-        ? xIndex
-        : xIndex - Math.sqrt(grid.length) / 2;
+    // const xMiddle =
+    //   xIndex < Math.sqrt(grid.length) / 2
+    //     ? xIndex
+    //     : xIndex - Math.sqrt(grid.length) / 2;
 
-    const yMiddle =
-      yIndex < Math.sqrt(grid.length) / 2
-        ? yIndex
-        : yIndex - Math.sqrt(grid.length) / 2;
+    // const yMiddle =
+    //   yIndex < Math.sqrt(grid.length) / 2
+    //     ? yIndex
+    //     : yIndex - Math.sqrt(grid.length) / 2;
 
-    const [xSqrt, ySqrt] = [
-      Math.sqrt(Math.abs(xMiddle)),
-      Math.sqrt(Math.abs(yMiddle)),
-    ];
+    // const [xSqrt, ySqrt] = [
+    //   Math.sqrt(Math.abs(xMiddle)),
+    //   Math.sqrt(Math.abs(yMiddle)),
+    // ];
 
-    const xCircle =
-      yMiddle < 0 ? (xSqrt < 0 ? -xSqrt : xSqrt) : xSqrt < 0 ? xSqrt : -xSqrt;
-    const yCircle =
-      xMiddle < 0 ? (ySqrt < 0 ? -ySqrt : ySqrt) : ySqrt < 0 ? ySqrt : -ySqrt;
+    // const xCircle =
+    //   yMiddle < 0 ? (xSqrt < 0 ? -xSqrt : xSqrt) : xSqrt < 0 ? xSqrt : -xSqrt;
+    // const yCircle =
+    //   xMiddle < 0 ? (ySqrt < 0 ? -ySqrt : ySqrt) : ySqrt < 0 ? ySqrt : -ySqrt;
 
     return {
       width: `${x * 0.01 + 0.1}rem`,
       height: `${y * 0.01 + 0.1}rem`,
       rotate: (x * y) / 360,
-      y: Y * X * 0.00008 + xCircle * 5,
-      x: (Y / X) * 0.0008 + yCircle * 5,
-      borderRadius: 100 - Y * X * 0.0003,
+      y: Y * X * 0.00008,
+      x: (Y / X) * 0.0008,
       opacity: 0.8 - Y * X * 0.0000027 - i * 0.0001,
       scale: 1 - x * y * 0.000015,
 
+      borderRadius: 100,
       // width: ".5rem",
       // height: ".5rem",
       // x: xCircle * 10,
@@ -100,3 +100,5 @@ export const ArrowGrid = () => {
     </div>
   );
 };
+
+export const MemoizedArrowGrid = React.memo(ArrowGrid);
