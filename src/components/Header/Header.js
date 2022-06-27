@@ -20,7 +20,7 @@ export const Header = ({ toggle }) => {
       <TextLink to="/">
         <MainLogo rotate={scrollHeight / 3}>TA</MainLogo>
       </TextLink>
-      {width < 900 || scrollHeight > 1600 ? (
+      {width < 560 || scrollHeight > 1300 ? (
         <PopUpMenu toggle={toggle} open={open} setOpen={setOpen} />
       ) : (
         <NavBar toggle={toggle} />

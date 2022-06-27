@@ -19,9 +19,7 @@ export const NavBar = ({ toggle }) => {
       <TextLink to="about" $horizontal>
         about
       </TextLink>
-      <TextLink to="projects" $horizontal>
-        projects
-      </TextLink>
+
       <TextLink to="contact" $horizontal>
         contact
       </TextLink>

@@ -5,7 +5,6 @@ import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "../hooks/ScrollToTop";
 import { Home } from "./Home/Home";
 import { About } from "./About/About";
-import { Projects } from "./Projects/Projects";
 import { Contact } from "./Contact/Contact";
 import { Resume } from "./Resume/Resume";
 import { Header } from "./Header/Header";
@@ -33,7 +32,6 @@ export const AnimatedRoutes = ({ toggle }) => {
         <Route path="/" element={<LayoutsWithNavbar toggle={toggle} />}>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="resume" element={<Resume />} />
         </Route>
