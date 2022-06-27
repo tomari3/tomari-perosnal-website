@@ -41,8 +41,7 @@ export const PopUpMenu = ({ open, setOpen, toggle }) => {
         custom={height}
         ref={containerRef}
       >
-        <TextLink to="about">about</TextLink>
-        <TextLink to="projects">projects</TextLink>
+        <TextLink to="/">home</TextLink>
         <TextLink to="contact">contact</TextLink>
         <TextLink to="resume">resume</TextLink>
         <ThemeButton toggle={toggle}></ThemeButton>

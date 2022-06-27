@@ -1,5 +1,7 @@
 import React from "react";
 
+import resumeFile from "../../assets/Tom_Ari_Resume.pdf";
+
 import { HomeIntroWrapper } from "../../styles/HomeIntroWrapper";
 import AnimatedCharacters from "../Home/AnimatedText";
 
@@ -26,13 +28,15 @@ export const Resume = () => {
       exit={"exit"}
       variants={container}
     >
-      <div className="text">
-        <div className="main-text">
-          {placeholderText.map((item, index) => {
-            return <AnimatedCharacters {...item} key={index} />;
-          })}
+      <a href={resumeFile} download>
+        <div className="text">
+          <div className="main-text">
+            {placeholderText.map((item, index) => {
+              return <AnimatedCharacters {...item} key={index} />;
+            })}
+          </div>
         </div>
-      </div>
+      </a>
     </HomeIntroWrapper>
   );
 };
