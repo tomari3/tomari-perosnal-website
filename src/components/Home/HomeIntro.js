@@ -8,7 +8,7 @@ import AnimatedCharacters from "./AnimatedText";
 const placeholderText = [
   { text: "Hello, I'm Tom." },
   {
-    text: "A Web Developer.",
+    text: "Software Developer.",
   },
 ];
 
@@ -56,9 +56,7 @@ export const HomeIntro = () => {
         </motion.div>
       </div>
       <div className="piece">
-        <Suspense fallback={null}>
-          <h1>ThreeJS PLACEHOLDER</h1>
-        </Suspense>
+        <Suspense fallback={null}></Suspense>
       </div>
     </HomeIntroWrapper>
   );

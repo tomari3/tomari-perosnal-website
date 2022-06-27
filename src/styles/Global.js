@@ -18,7 +18,8 @@ export const Global = createGlobalStyle`
 
   body {
     background-color: var(--primary-bg);
-    transition: all 1s ease;
+    color: var(--primary-text);
+    transition: all ease .5s;
     position: relative;
     
   }
@@ -38,7 +39,6 @@ export const Global = createGlobalStyle`
     --gradient-pink2: ${({ theme }) => theme.gradientPink2};;
     --gradient-pink3: ${({ theme }) => theme.gradientPink3};;
     
-    --default-transition: color 2s ease;
     
     --size: clamp(600px, 50vmax, 60vmax);
 

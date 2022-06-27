@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState } from "react"; 
 import { HashRouter } from "react-router-dom";
 
 import { lightTheme, darkTheme } from "./styles/Theme";

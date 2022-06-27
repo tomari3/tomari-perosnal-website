@@ -70,7 +70,7 @@ export const FooterWrapper = styled.footer`
   .grid-wrapper {
     /* position: absolute; */
     --grid-size: 30vmin;
-    --grid-line: 20;
+    --grid-line: 8;
     height: var(--grid-size);
     aspect-ratio: 1;
     display: grid;
