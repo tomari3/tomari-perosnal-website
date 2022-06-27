@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.js": "/tomari-perosnal-website/static/js/main.e2451fe9.js",
+    "main.js": "/tomari-perosnal-website/static/js/main.d0249c01.js",
+    "static/media/out.gif": "/tomari-perosnal-website/static/media/out.6918648ededa58c5293c.gif",
+    "static/media/post.png": "/tomari-perosnal-website/static/media/post.abdcd39aed4e25ea43d3.png",
+    "static/media/profile.png": "/tomari-perosnal-website/static/media/profile.6cbe38cf8179d5c52e63.png",
+    "static/media/intro.png": "/tomari-perosnal-website/static/media/intro.e085425c34718ba36543.png",
+    "static/media/users.png": "/tomari-perosnal-website/static/media/users.00259191ad50de015224.png",
+    "static/media/player.png": "/tomari-perosnal-website/static/media/player.4915edc165821f7aaaba.png",
     "index.html": "/tomari-perosnal-website/index.html",
-    "main.e2451fe9.js.map": "/tomari-perosnal-website/static/js/main.e2451fe9.js.map"
+    "main.d0249c01.js.map": "/tomari-perosnal-website/static/js/main.d0249c01.js.map"
   },
   "entrypoints": [
-    "static/js/main.e2451fe9.js"
+    "static/js/main.d0249c01.js"
   ]
 }
