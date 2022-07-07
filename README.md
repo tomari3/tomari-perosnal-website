@@ -1,70 +1,179 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/tomari3/tomari-personal-website">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-In the project directory, you can run:
+<h3 align="center">Portfolio</h3>
 
-### `npm start`
+  <p align="center">
+    Personal Portfolio Website.
+    <br />
+    <a href="https://tomari3.github.io/tomari-perosnal-website/">View Demo</a>
+    ·
+    <a href="https://github.com/tomari3/tomari-personal-website/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/tomari3/tomari-personal-website/issues">Request Feature</a>
+  </p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
 
-### `npm test`
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![MERNBlog][product-screenshot]](portfolio-welcome.png)
 
-### `npm run build`
+This is a multi user / social network blogging platform with support for comments, posts, sub comments, tags, multiple images, profile page with images, description and like, saves and posts history.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React.js](https://reactjs.org/)
+- [StyledComponents](https://styled-components.com/)
+- [Framer](https://www.framer.com/motion/)
+- [Figma](https://www.figma.com/)
 
-### `npm run eject`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- GETTING STARTED -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/tomari3/tomari-personal-website.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Code Splitting
+<!-- USAGE EXAMPLES -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+[![projects][product-screenshot]](show-projects.png)
+[![contact][product-screenshot]](share-contact.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Making a Progressive Web App
+<!-- ROADMAP -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Roadmap
 
-### Advanced Configuration
+- [ ] Dark Mode
+- [ ] Projects Section
+- [ ] Contact Section
+- [ ] Resume Download
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+See the [open issues](https://github.com/tomari3/tomari-personal-website/issues) for a full list of proposed features (and known issues).
 
-### Deployment
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- CONTRIBUTING -->
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Tom Ari - [@linkedin_handle](https://www.linkedin.com/in/tom-ari/) - tom_ari@ymail.com
+
+Project Link: [https://github.com/tomari3/tomari-personal-website](https://github.com/tomari3/tomari-personal-website)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+<!-- ## Acknowledgments
+* []()
+* []()
+* []() -->
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/tomari3/tomari-personal-website.svg?style=for-the-badge
+[contributors-url]: https://github.com/tomari3/tomari-personal-website/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/tomari3/tomari-personal-website.svg?style=for-the-badge
+[forks-url]: https://github.com/tomari3/tomari-personal-website/network/members
+[stars-shield]: https://img.shields.io/github/stars/tomari3/tomari-personal-website.svg?style=for-the-badge
+[stars-url]: https://github.com/tomari3/tomari-personal-website/stargazers
+[issues-shield]: https://img.shields.io/github/issues/tomari3/tomari-personal-website.svg?style=for-the-badge
+[issues-url]: https://github.com/tomari3/tomari-personal-website/issues
+[license-shield]: https://img.shields.io/github/license/tomari3/tomari-personal-website.svg?style=for-the-badge
+[license-url]: https://github.com/tomari3/tomari-personal-website/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/tom-ari-72034122a/
+[product-screenshot]: https://imgur.com/3MLYo2M
